@@ -1,0 +1,43 @@
+%section.gallery
+  .gallery__container.container
+    .section-label.to-left
+      %span Gallery
+    .gallery__content
+      %h1.gallery__title.section-title Gallery
+      .gallery__grid
+        %a.gallery__item.lg{"data-fancybox" => "gallery", href: image_path("gallery/image-1.jpg") }
+          %picture
+            %source{ srcset: image_path("gallery/image-1.webp"), type: "image/webp" }
+              %img.image{src: image_path("gallery/image-1.jpg") }
+        %a.gallery__item.lg{"data-fancybox" => "gallery", href: image_path("gallery/image-2.jpg") }
+          %picture
+            %source{ srcset: image_path("gallery/image-2.webp"), type: "image/webp" }
+              %img.image{src: image_path("gallery/image-2.jpg") }
+        %a.gallery__item{"data-fancybox" => "gallery", href: image_path("gallery/image-3.jpg") }
+          %picture
+            %source{ srcset: image_path("gallery/image-3.webp"), type: "image/webp" }
+              %img.image{src: image_path("gallery/image-3.jpg") }
+        %a.gallery__item{"data-fancybox" => "gallery", href: image_path("gallery/image-4.jpg") }
+          %picture
+            %source{ srcset: image_path("gallery/image-4.webp"), type: "image/webp" }
+              %img.image{src: image_path("gallery/image-4.jpg") }
+        %a.gallery__item{"data-fancybox" => "gallery", href: image_path("gallery/image-5.jpg") }
+          %picture
+            %source{ srcset: image_path("gallery/image-5.webp"), type: "image/webp" }
+              %img.image{src: image_path("gallery/image-5.jpg") }
+        %a.gallery__item{"data-fancybox" => "gallery", href: image_path("gallery/image-6.jpg") }
+          %picture
+            %source{ srcset: image_path("gallery/image-6.webp"), type: "image/webp" }
+              %img.image{src: image_path("gallery/image-6.jpg") }
+        %a.gallery__item{"data-fancybox" => "gallery", href: image_path("gallery/image-7.jpg") }
+          %picture
+            %source{ srcset: image_path("gallery/image-7.webp"), type: "image/webp" }
+              %img.image{src: image_path("gallery/image-7.jpg") }
+        %a.gallery__item{"data-fancybox" => "gallery", href: image_path("gallery/image-8.jpg") }
+          %picture
+            %source{ srcset: image_path("gallery/image-8.webp"), type: "image/webp" }
+              %img.image{src: image_path("gallery/image-8.jpg") }
+        %a.gallery__item{"data-fancybox" => "gallery", href: image_path("gallery/image-9.jpg") }
+          %picture
+            %source{ srcset: image_path("gallery/image-9.webp"), type: "image/webp" }
+              %img.image{src: image_path("gallery/image-9.jpg") }
