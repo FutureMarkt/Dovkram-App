@@ -6,41 +6,16 @@
         %span REVIEWS
       .reviews-slider.swiper
         .swiper-wrapper
-          .reviews__slide.swiper-slide
-            .reviews__block.block-reviews
-              .block-reviews__image
-                = image_tag 'reviews/image-1.jpg', alt: '', height: '576', width: '536'
-              .block-reviews__content
-                %span Alica B.
-                .block-reviews__desc
-                  %p Surprisingly, the very first proposed version of the interior completely suited me (and, oddly enough, my husband). And usually we have sooo stormy battles on the topic of home renovation and design.
-                  %p The repair, which was done three years ago in exactly the same apartment for a students on, cost kilometers of nerves and led to the only correct conclusion — next time — only a finished project and no amateur performances.
-                  %p Thank you so much for the speed of creating the project and for the quick feedback on all questions!
-          .reviews__slide.swiper-slide
-            .reviews__block.block-reviews
-              .block-reviews__image
-                = image_tag 'reviews/image-2.jpg', alt: '', height: '576', width: '536'
-              .block-reviews__content
-                %span Gabby B.
-                .block-reviews__desc
-                  %p Thank you so much for the speed of creating the project and for the quick feedback on all questions!
-          .reviews__slide.swiper-slide
-            .reviews__block.block-reviews
-              .block-reviews__image
-                = image_tag 'reviews/image-1.jpg', alt: '', height: '576', width: '536'
-              .block-reviews__content
-                %span Alica B.
-                .block-reviews__desc
-                  %p Surprisingly, the very first proposed version of the interior completely suited me (and, oddly enough, my husband). And usually we have sooo stormy battles on the topic of home renovation and design.
-                  %p The repair, which was done three years ago in exactly the same apartment for a students on, cost kilometers of nerves and led to the only correct conclusion — next time — only a finished project and no amateur performances.
-                  %p Thank you so much for the speed of creating the project and for the quick feedback on all questions!
-          .reviews__slide.swiper-slide
-            .reviews__block.block-reviews
-              .block-reviews__image
-                = image_tag 'reviews/image-2.jpg', alt: '', height: '576', width: '536'
-              .block-reviews__content
-                %span Gabby B.
-                .block-reviews__desc
-                  %p Thank you so much for the speed of creating the project and for the quick feedback on all questions!
+          - @reviews = Review.all
+          - @reviews.each do |review|
+            .reviews__slide.swiper-slide
+              .reviews__block.block-reviews
+                .block-reviews__image
+                  = image_tag "reviews/image-#{rand(1..6)}.jpg", alt: '', height: '576', width: '536'
+                .block-reviews__content
+                  %span= review.name
+                  .block-reviews__desc
+                    = review.content
+
         .swiper-button-prev
         .swiper-button-next

@@ -1604,7 +1604,7 @@ a {
     line-height: 22px;
   }
 }
-.block-reviews__desc p {
+.block-reviews__desc p, .trix-content {
   max-width: 630px;
   font-size: 20px;
   line-height: 27px;
@@ -1615,12 +1615,12 @@ a {
   margin-bottom: 20px;
 }
 @media (max-width: 991px) {
-  .block-reviews__desc p {
+  .block-reviews__desc p, .trix-content {
     max-width: 100%;
   }
 }
 @media (max-width: 767px) {
-  .block-reviews__desc p {
+  .block-reviews__desc p, .trix-content {
     font-size: 16px;
     line-height: 22px;
   }
