@@ -1,14 +1,16 @@
 %section.about
   .about__container.container
     .about__video
-      %button.about__video-play.btn-reset
+      -# %button.about__video-play.btn-reset
         %img{ alt: "", height: "35", src: image_path('video-play.svg'), width: "35" }
       %img{ alt: "", height: "499", src: image_path("about/poster.jpg"), width: "630" }
     .about__content
       %h1.about__title.section-title About Us
+      %h2.page-title Full Service Construction Company and Project Management Firm
       .about__info
-        %p.about__desc Dov Kram Ltd construction company is one that is known for its high-quality work, attention to detail, and customer satisfaction. We employ skilled and experienced professionals who are able to handle all aspects of the construction process, from initial planning and design to final completion and cleanup. We use the best materials and techniques to ensure that the finished product is durable, functional, and aesthetically pleasing.
-        %p.about__desc Dov Kram Ltd is also known for its reliability and professionalism, completing projects on time and within budget. Overall, Dov Kram Ltd is one that is highly regarded in the industry and trusted by its clients to deliver exceptional results.
+        %p.about__desc Dov Kram LTD is a one stop shop for all construction and project management needs. Streamlining and simplifying what is typically seen as a complicated and cumbersome process and allowing for their customers to make design decisions and leaving the headaches of the day to day to Dov Kram LTD.
+        %p.about__desc High end and luxury finishes without compromise.
+        %p.about__desc In addition to the owner and CEO’s more than two decades of high level professional experience there is a team of experts who will be working with you to produce the highest level of finish and service in the international marketplace.
     .section-label
       %span ABOUT US
 %section.team
@@ -24,32 +26,48 @@
               %source{ srcset: image_path('team/Abraham_Chacra.webp'), type: "image/webp" }
                 = image_tag('team/Abraham_Chacra.jpg', width: "216", height: "325")
           %h3.card-team__name Abraham Chacra
-          %p.card-team__desc Director of Administration. Manages all Administrative Tasks and Leads all Back Office Operations.
+          %p.card-team__desc
+            VP of Administration.
+            %br
+            Leads Administrative and Back Office Operations.
+
         .team__card.card-team
           .card-team__image
             %picture
               %source{ srcset: image_path('team/Elyashiv_Kimchi.webp'), type: "image/webp" }
                 = image_tag('team/Elyashiv_Kimchi.jpg', width: "216", height: "325")
           %h3.card-team__name Elyashiv Kimchi
-          %p.card-team__desc COO Manages day to day Operations of the Company and On Site Management.
+          %p.card-team__desc
+            COO
+            %br
+            Manages day to day Operations of the Company and On Site Management.
+
         .team__card.card-team
           .card-team__image
             %picture
               %source{ srcset: image_path('team/Dov_Kram.webp'), type: "image/webp" }
                 = image_tag('team/Dov_Kram.jpg', width: "216", height: "325")
           %h3.card-team__name Dov Kram
-          %p.card-team__desc CEO and Founder of Dov Kram LTD.
+          %p.card-team__desc CEO and Founder of Dov Kram LTD.
         .team__card.card-team
           .card-team__image
             %picture
               %source{ srcset: image_path('team/Liron_Dotan.webp'), type: "image/webp" }
                 = image_tag('team/Liron_Dotan.jpg', width: "216", height: "325")
           %h3.card-team__name Liron Dotan
-          %p.card-team__desc Purchasing and Relations Director. Manages Negotiations and Contact with all Suppliers and Service Providers.
+          %p.card-team__desc
+            VP of Relations and Purchasing.
+            %br
+            Manages Negotiations and Contact with all Suppliers and Service Providers.
+
         .team__card.card-team
           .card-team__image
             %picture
               %source{ srcset: image_path('team/Sarit_Izhakian.webp'), type: "image/webp" }
                 = image_tag('team/Sarit_Izhakian.jpg', width: "216", height: "325")
           %h3.card-team__name Sarit Izhakian
-          %p.card-team__desc CFO Manages Financial Operations of the Company.
+          %p.card-team__desc
+            CFO
+            %br
+            Manages Financial Operations of the Company.
+
