@@ -886,10 +886,11 @@ a {
 }
 @media (max-width: 576px) {
   .team__grid {
-    gap: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    gap: 30px;
+    flex-direction: column;
   }
 }
 @media (max-width: 767px) {
