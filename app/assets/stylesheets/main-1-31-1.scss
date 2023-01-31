@@ -1966,10 +1966,10 @@ a {
 }
 
 .fancybox__thumb {
-  border-radius: 0;
+  border-radius: 0 !important;
 }
 
 .fancybox__thumbs .carousel__slide .fancybox__thumb::after {
-  border-width: 3px;
-  border-color: #D9C238;
+  border-width: 3px !important;
+  border-color: #D9C238 !important;
 }
