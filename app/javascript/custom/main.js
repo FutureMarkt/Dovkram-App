@@ -12774,6 +12774,9 @@ document.addEventListener("turbo:load", function() {
   /* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_components */ "./src/js/_components.js");
   /* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components__WEBPACK_IMPORTED_MODULE_1__);
 
+  setTimeout(() => {
+    document.querySelector(".hero__video video")?.setAttribute("src", "https://dovkram.s3.eu-west-2.amazonaws.com/dovkram_promo.mp4");
+  }, 1500);
 
   setTimeout(() => {
     document.getElementById("preloader")?.remove();
