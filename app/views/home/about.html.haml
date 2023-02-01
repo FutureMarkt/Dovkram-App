@@ -3,7 +3,7 @@
     .about__video
       -# %button.about__video-play.btn-reset
         %img{ alt: "", height: "35", src: image_path('video-play.svg'), width: "35" }
-      %img{ alt: "", height: "499", src: image_path("about/poster.jpg"), width: "630" }
+      %img{ alt: "", height: "499", src: image_path("about/poster.webp"), width: "630" }
     .about__content
       -# %h1.about__title.section-title About Us
       %h1.about__title.section-title{ style: 'font-size: 24px; line-height: 34px;' } General Contractor and Construction Project Management Firm
@@ -23,8 +23,8 @@
         .team__card.card-team
           .card-team__image
             %picture
-              %source{ srcset: image_path('team/Abraham_Chacra.webp'), type: "image/webp" }
-                = image_tag('team/Abraham_Chacra.jpg', width: "216", height: "325")
+              %source{ srcset: image_path('team/Abraham_Chacra_thumb.webp'), type: "image/webp" }
+                = image_tag('team/Abraham_Chacra_thumb.webp', width: "216", height: "325")
           %h3.card-team__name Abraham Chacra
           %p.card-team__desc
             VP of Administration
@@ -35,7 +35,7 @@
           .card-team__image
             %picture
               %source{ srcset: image_path('team/Elyashiv_Kimchi.webp'), type: "image/webp" }
-                = image_tag('team/Elyashiv_Kimchi.jpg', width: "216", height: "325")
+                = image_tag('team/Elyashiv_Kimchi_thumb.webp', width: "216", height: "325")
           %h3.card-team__name Elyashiv Kimchi
           %p.card-team__desc
             COO
@@ -45,15 +45,15 @@
         .team__card.card-team
           .card-team__image
             %picture
-              %source{ srcset: image_path('team/Dov_Kram.webp'), type: "image/webp" }
-                = image_tag('team/Dov_Kram.jpg', width: "216", height: "325")
+              %source{ srcset: image_path('team/Dov_Kram_thumb.webp'), type: "image/webp" }
+                = image_tag('team/Dov_Kram_thumb.webp', width: "216", height: "325")
           %h3.card-team__name Dov Kram
           %p.card-team__desc CEO and Founder of Dov Kram LTD
         .team__card.card-team
           .card-team__image
             %picture
-              %source{ srcset: image_path('team/Liron_Dotan.webp'), type: "image/webp" }
-                = image_tag('team/Liron_Dotan.jpg', width: "216", height: "325")
+              %source{ srcset: image_path('team/Liron_Dotan_thumb.webp'), type: "image/webp" }
+                = image_tag('team/Liron_Dotan_thumb.webp', width: "216", height: "325")
           %h3.card-team__name Liron Dotan
           %p.card-team__desc
             VP of Relations and Purchasing
@@ -63,8 +63,8 @@
         .team__card.card-team
           .card-team__image
             %picture
-              %source{ srcset: image_path('team/Sarit_Izhakian.webp'), type: "image/webp" }
-                = image_tag('team/Sarit_Izhakian.jpg', width: "216", height: "325")
+              %source{ srcset: image_path('team/Sarit_Izhakian_thumb.webp'), type: "image/webp" }
+                = image_tag('team/Sarit_Izhakian_thumb.webp', width: "216", height: "325")
           %h3.card-team__name Sarit Izhakian
           %p.card-team__desc
             CFO
