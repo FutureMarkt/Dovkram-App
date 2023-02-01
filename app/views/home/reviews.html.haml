@@ -6,6 +6,15 @@
         %span REVIEWS
       .reviews-slider.swiper
         .swiper-wrapper
+          -# .reviews__slide.swiper-slide
+            .reviews__block.block-reviews
+              .block-reviews__image
+                = image_tag "reviews/first_price_residential_apatments_israel_2022.jpg", alt: '', height: '576', width: '536'
+              .block-reviews__content
+                %span 1st Prize - Residential Apatments, Israel 2022
+                .block-reviews__desc
+                  = review.content
+
           - @reviews = Review.all
           - @reviews.each do |review|
             .reviews__slide.swiper-slide

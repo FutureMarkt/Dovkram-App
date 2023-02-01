@@ -51,18 +51,21 @@ html {
 }
 
 .page {
-  height: 100%;
+  height: auto;
   font-family: var(--font-family, sans-serif);
   -webkit-text-size-adjust: 100%;
 }
 
 .page__body {
   margin: 0;
-  min-width: 320px;
-  min-height: 100%;
+  height: 100%;
   font-size: 16px;
   background-color: var(--god-color);
   color: var(--light-color);
+}
+
+.main {
+  height: 100%;
 }
 
 img {
@@ -83,6 +86,7 @@ a {
 
 .site-container {
   position: relative;
+  height: 100%;
 }
 .site-container:after {
   content: "";
@@ -575,24 +579,12 @@ a {
 }
 
 .hero {
-  background-image: image-url("hero-bg.jpg");
+  background-image: url("../img/hero-bg.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  height: 100vh;
-}
-.hero:after {
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
   height: 100%;
-  position: absolute;
-  z-index: 2;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2)));
-  background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), -o-linear-gradient(bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), -o-linear-gradient(bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
 }
 .hero__container {
   padding-top: 360px;
@@ -621,7 +613,7 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 .hero__video video {
   width: 100%;
@@ -886,11 +878,10 @@ a {
 }
 @media (max-width: 576px) {
   .team__grid {
+    gap: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 30px;
-    flex-direction: column;
   }
 }
 @media (max-width: 767px) {
@@ -1966,10 +1957,10 @@ a {
 }
 
 .fancybox__thumb {
-  border-radius: 0 !important;
+  border-radius: 0;
 }
 
 .fancybox__thumbs .carousel__slide .fancybox__thumb::after {
-  border-width: 3px !important;
-  border-color: #D9C238 !important;
+  border-width: 1px;
+  border-color: #D9C238;
 }
