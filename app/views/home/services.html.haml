@@ -6,35 +6,35 @@
       .services__content
         .services__block.block-services.active
           .block-services__image
-            = image_tag 'services/image-1.jpg', alt: '', height: '298', width: '591'
-          %h3.block-services__title Luxurious Property Project Management & Construction.
+            = image_tag 'services/general_contracting.jpg', alt: '', height: '298', width: '591'
+          %h3.block-services__title General Contracting
         .services__block.block-services
           .block-services__image
-            = image_tag 'services/image-2.jpg', alt: '', height: '298', width: '591'
-          %h3.block-services__title High End Property Project Management & Construction.
+            = image_tag 'services/project_management.jpg', alt: '', height: '298', width: '591'
+          %h3.block-services__title Project Management
 %section.property
   .property-slider.swiper
     .swiper-wrapper
       .property__slide.swiper-slide
         .property__image
-          = image_tag 'services/image-1.jpg', alt: '', height: '298', width: '591'
+          = image_tag 'services/general_contracting.jpg', alt: '', height: '298', width: '591'
         .property__container.container
           .section-label.to-left
             %span Services
           .property__content
-            %span 01
-            %h1.property__title Project Management
-            %button.property__button.btn-primary.btn-reset{"data-modal" => "luxurious-property"} Read more
-      .property__slide.swiper-slide
-        .property__image
-          = image_tag 'services/image-2.jpg', alt: '', height: '298', width: '591'
-        .property__container.container
-          .section-label.to-left
-            %span Services
-          .property__content
-            %span 02
+            -# %span 02
             %h1.property__title General Contracting
             %button.property__button.btn-primary.btn-reset{"data-modal" => "high-end"} Read more
+      .property__slide.swiper-slide
+        .property__image
+          = image_tag 'services/project_management.jpg', alt: '', height: '298', width: '591'
+        .property__container.container
+          .section-label.to-left
+            %span Services
+          .property__content
+            -# %span 01
+            %h1.property__title Project Management
+            %button.property__button.btn-primary.btn-reset{"data-modal" => "luxurious-property"} Read more
     .swiper-button-prev
     .swiper-button-next
 
@@ -49,13 +49,11 @@
         %span Project Management
       .project__block.block-project
         .block-project__image
-          = image_tag 'services/image-1.jpg', alt: 'Project Management', height: '478', width: '556'
+          = image_tag 'services/project_management.jpg', alt: 'Project Management', height: '478', width: '556'
         .block-project__info
           %h1.block-project__title.section-title Project Management
           .block-project__desc
-            %p One Contract, One Entity to Pay, One Place to turn for Warranty Issues should they arise.
-            %p Services include:
-            %p Finding properties to purchase, negotiating the purchase, financing the deals, selecting and engaging architects and designers and engaging all necessary consultants and engineers, securing permits, execution of construction work, purchasing of all hard and soft goods, helping with specialty imports, custom fabrication, and thorough oversight and communication
+            %p Oversight and assistance in all aspects that relate to your property and construction. Assistance in securing terms and contracts with all service providers. Approval of all payments that are then handled by the customer or a third party service. Oversight of the project and the on-site management and construction crews.
 
 #high-end.project.modal
   .project__container.container
@@ -68,8 +66,11 @@
         %span General Contracting
       .project__block.block-project
         .block-project__image
-          = image_tag 'services/image-2.jpg', alt: 'General Contracting', height: '478', width: '556'
+          = image_tag 'services/general_contracting.jpg', alt: 'General Contracting', height: '478', width: '556'
         .block-project__info
           %h1.block-project__title.section-title General Contracting
           .block-project__desc
-            %p Assisting in servicing contracts with each entity needed to execute the project, approving payment requests, along with assisting in all areas that are offered in the General Contracting service in the role of client representative/consultant.
+            %p Management and Construction: Turn-Key Service with One Contract, One Point of Contact, One Address for all of your Needs.
+            %p For the most hands off approach available in Israel which alleviates headaches and the need for day to day involvement this is the service of choice.
+            %p From identifying a property, negotiating the purchase, financing, design and planning, permitting, building the team of engineers and consultants, selecting and purchasing the materials. Custom imports, custom manufacturing, financial management and project oversight and most importantly, one singular provider for all warranties.
+

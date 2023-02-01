@@ -5,8 +5,8 @@
         %img{ alt: "", height: "35", src: image_path('video-play.svg'), width: "35" }
       %img{ alt: "", height: "499", src: image_path("about/poster.jpg"), width: "630" }
     .about__content
-      %h1.about__title.section-title About Us
-      %h2.page-title Full Service Construction Company and Project Management Firm
+      -# %h1.about__title.section-title About Us
+      %h1.about__title.section-title{ style: 'font-size: 24px; line-height: 34px;' } General Contractor and Construction Project Management Firm
       .about__info
         %p.about__desc Dov Kram LTD is a one stop shop for all construction and project management needs. Streamlining and simplifying what is typically seen as a complicated and cumbersome process and allowing for their customers to make design decisions and leaving the headaches of the day to day to Dov Kram LTD.
         %p.about__desc High end and luxury finishes without compromise.
@@ -18,7 +18,7 @@
     .section-label.to-left
       %span Our Team
     .team__content
-      %h2.team__title.section-title Our Team
+      -# %h2.team__title.section-title Our Team
       .team__grid
         .team__card.card-team
           .card-team__image
@@ -27,7 +27,7 @@
                 = image_tag('team/Abraham_Chacra.jpg', width: "216", height: "325")
           %h3.card-team__name Abraham Chacra
           %p.card-team__desc
-            VP of Administration.
+            VP of Administration
             %br
             Leads Administrative and Back Office Operations.
 
@@ -48,7 +48,7 @@
               %source{ srcset: image_path('team/Dov_Kram.webp'), type: "image/webp" }
                 = image_tag('team/Dov_Kram.jpg', width: "216", height: "325")
           %h3.card-team__name Dov Kram
-          %p.card-team__desc CEO and Founder of Dov Kram LTD.
+          %p.card-team__desc CEO and Founder of Dov Kram LTD
         .team__card.card-team
           .card-team__image
             %picture
@@ -56,7 +56,7 @@
                 = image_tag('team/Liron_Dotan.jpg', width: "216", height: "325")
           %h3.card-team__name Liron Dotan
           %p.card-team__desc
-            VP of Relations and Purchasing.
+            VP of Relations and Purchasing
             %br
             Manages Negotiations and Contact with all Suppliers and Service Providers.
 
