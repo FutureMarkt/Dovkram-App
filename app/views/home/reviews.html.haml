@@ -9,22 +9,25 @@
           -# .reviews__slide.swiper-slide
             .reviews__block.block-reviews
               .block-reviews__image
-                = image_tag "reviews/first_price_residential_apatments_israel_2022.jpg", alt: '', height: '576', width: '536'
+                = image_tag "reviews/first_price_residential_apartments_israel_2022.jpg", alt: '', height: '576', width: '536'
               .block-reviews__content
                 %span 1st Prize - Residential Apatments, Israel 2022
                 .block-reviews__desc
                   = review.content
 
           - @reviews = Review.all
+          - ix = rand(0..5) * 10
           - @reviews.each do |review|
             .reviews__slide.swiper-slide
               .reviews__block.block-reviews
                 .block-reviews__image
-                  = image_tag "reviews/image-#{rand(1..6)}.jpg", alt: '', height: '576', width: '536'
+                  -# = image_tag "reviews/image-#{rand(1..6)}.jpg", alt: '', height: '576', width: '536'
+                  = image_tag "gallery/gallery_#{ix}.webp", alt: '', height: '576', width: '536'
                 .block-reviews__content
                   %span= review.name
                   .block-reviews__desc
                     = review.content
+            - ix += 1
 
         .swiper-button-prev
         .swiper-button-next

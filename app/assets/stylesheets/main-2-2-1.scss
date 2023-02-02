@@ -749,6 +749,7 @@ a {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
   position: absolute;
   z-index: 2;
+  display: none !important;
 }
 .about__content {
   -ms-flex-preferred-size: 45%;
