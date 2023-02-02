@@ -8,15 +8,16 @@
         .swiper-wrapper
           -# .reviews__slide.swiper-slide
             .reviews__block.block-reviews
-              .block-reviews__image
-                = image_tag "reviews/first_price_residential_apartments_israel_2022.jpg", alt: '', height: '576', width: '536'
+              .block-reviews__image{ style: 'height: 393px' }
+                = image_tag "reviews/first_price_residential_apartments_israel_2022.webp", alt: '', width: '536'
               .block-reviews__content
-                %span 1st Prize - Residential Apatments, Israel 2022
+                %span
                 .block-reviews__desc
-                  = review.content
+                  First Prize on Residential Apartments 2022
 
           - @reviews = Review.all
-          - ix = rand(0..5) * 10
+          - ix = rand(0..4) * 10
+          - ix = 1 if ix.eql?(0)
           - @reviews.each do |review|
             .reviews__slide.swiper-slide
               .reviews__block.block-reviews
