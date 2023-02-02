@@ -76,19 +76,21 @@ document.addEventListener("turbo:load", function() {
       });
     });
   }
-  function initTeamSwiper() {
-    if (window.innerWidth <= 576) {
-      new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".team-slider", {
-        speed: 1000,
-        slidesPerView: 1.5,
-        spaceBetween: 20
-      });
-    }
-  }
-  initTeamSwiper();
-  window.addEventListener("orientationchange", () => {
-    initTeamSwiper();
-  });
+
+  // function initTeamSwiper() {
+  //     if (window.innerWidth <= 576) {
+  //         new Swiper(".team-slider", {
+  //             speed: 1000,
+  //             slidesPerView: 1.5,
+  //             spaceBetween: 20,
+  //         });
+  //     }
+  // }
+  // initTeamSwiper();
+  // window.addEventListener("orientationchange", () => {
+  //     initTeamSwiper();
+  // });
+
   new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".reviews-slider", {
     speed: 1000,
     spaceBetween: 10,
@@ -12774,10 +12776,15 @@ document.addEventListener("turbo:load", function() {
   /* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_components */ "./src/js/_components.js");
   /* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components__WEBPACK_IMPORTED_MODULE_1__);
 
-  setTimeout(() => {
-    document.querySelector(".hero__video video")?.setAttribute("src", "https://dovkram.s3.eu-west-2.amazonaws.com/dovkram_promo.mp4");
-  }, 1500);
 
+  setTimeout(() => {
+    document
+        .querySelector(".hero__video video")
+        ?.setAttribute(
+            "src",
+            "https://dovkram.s3.eu-west-2.amazonaws.com/dovkram_promo.mp4"
+        );
+  }, 1500);
   setTimeout(() => {
     document.getElementById("preloader")?.remove();
   }, 250);
@@ -12845,4 +12852,5 @@ document.addEventListener("turbo:load", function() {
 
   /******/ })()
   ;
+
 })
