@@ -19,55 +19,57 @@
       %span Our Team
     .team__content
       -# %h2.team__title.section-title Our Team
-      .team__grid
-        .team__card.card-team
-          .card-team__image
-            %picture
-              %source{ srcset: image_path('team/Abraham_Chacra_thumb.webp'), type: "image/webp" }
-                = image_tag('team/Abraham_Chacra_thumb.webp', width: "216", height: "325")
-          %h3.card-team__name Abraham Chacra
-          %p.card-team__desc
-            VP of Administration
-            %br
-            Leads Administrative and Back Office Operations.
-
-        .team__card.card-team
-          .card-team__image
-            %picture
-              %source{ srcset: image_path('team/Elyashiv_Kimchi.webp'), type: "image/webp" }
-                = image_tag('team/Elyashiv_Kimchi_thumb.webp', width: "216", height: "325")
-          %h3.card-team__name Elyashiv Kimchi
-          %p.card-team__desc
-            COO
-            %br
-            Manages day to day Operations of the Company and On Site Management.
-
-        .team__card.card-team
-          .card-team__image
-            %picture
-              %source{ srcset: image_path('team/Dov_Kram_thumb.webp'), type: "image/webp" }
-                = image_tag('team/Dov_Kram_thumb.webp', width: "216", height: "325")
-          %h3.card-team__name Dov Kram
-          %p.card-team__desc CEO and Founder of Dov Kram LTD
-        .team__card.card-team
-          .card-team__image
-            %picture
-              %source{ srcset: image_path('team/Liron_Dotan_thumb.webp'), type: "image/webp" }
-                = image_tag('team/Liron_Dotan_thumb.webp', width: "216", height: "325")
-          %h3.card-team__name Liron Dotan
-          %p.card-team__desc
-            VP of Relations and Purchasing
-            %br
-            Manages Negotiations and Contact with all Suppliers and Service Providers.
-
-        .team__card.card-team
-          .card-team__image
-            %picture
-              %source{ srcset: image_path('team/Sarit_Izhakian_thumb.webp'), type: "image/webp" }
-                = image_tag('team/Sarit_Izhakian_thumb.webp', width: "216", height: "325")
-          %h3.card-team__name Sarit Izhakian
-          %p.card-team__desc
-            CFO
-            %br
-            Manages Financial Operations of the Company.
-
+      .team-slider.swiper
+        .team__grid.swiper-wrapper
+          .swiper-slide
+            .team__card.card-team
+              .card-team__image
+                %picture
+                  %source{ srcset: image_path('team/Abraham_Chacra_thumb.webp'), type: "image/webp" }
+                    = image_tag('team/Abraham_Chacra_thumb.webp', width: "216", height: "325")
+              %h3.card-team__name Abraham Chacra
+              %p.card-team__desc
+                VP of Administration
+                %br
+                Leads Administrative and Back Office Operations.
+          .swiper-slide
+            .team__card.card-team
+              .card-team__image
+                %picture
+                  %source{ srcset: image_path('team/Elyashiv_Kimchi.webp'), type: "image/webp" }
+                    = image_tag('team/Elyashiv_Kimchi_thumb.webp', width: "216", height: "325")
+              %h3.card-team__name Elyashiv Kimchi
+              %p.card-team__desc
+                COO
+                %br
+                Manages day to day Operations of the Company and On Site Management.
+          .swiper-slide
+            .team__card.card-team
+              .card-team__image
+                %picture
+                  %source{ srcset: image_path('team/Dov_Kram_thumb.webp'), type: "image/webp" }
+                    = image_tag('team/Dov_Kram_thumb.webp', width: "216", height: "325")
+              %h3.card-team__name Dov Kram
+              %p.card-team__desc CEO and Founder of Dov Kram LTD
+          .swiper-slide
+            .team__card.card-team
+              .card-team__image
+                %picture
+                  %source{ srcset: image_path('team/Liron_Dotan_thumb.webp'), type: "image/webp" }
+                    = image_tag('team/Liron_Dotan_thumb.webp', width: "216", height: "325")
+              %h3.card-team__name Liron Dotan
+              %p.card-team__desc
+                VP of Relations and Purchasing
+                %br
+                Manages Negotiations and Contact with all Suppliers and Service Providers.
+          .swiper-slide
+            .team__card.card-team
+              .card-team__image
+                %picture
+                  %source{ srcset: image_path('team/Sarit_Izhakian_thumb.webp'), type: "image/webp" }
+                    = image_tag('team/Sarit_Izhakian_thumb.webp', width: "216", height: "325")
+              %h3.card-team__name Sarit Izhakian
+              %p.card-team__desc
+                CFO
+                %br
+                Manages Financial Operations of the Company.
