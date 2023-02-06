@@ -12845,4 +12845,10 @@ document.addEventListener("turbo:load", function() {
 
   /******/ })()
   ;
+
+  const heroVideo = document.querySelector(".hero__video video");
+  setTimeout(() => {
+      heroVideo.muted = false;
+      heroVideo.volume = 0.2;
+  }, 2000);
 })
