@@ -77,16 +77,29 @@ document.addEventListener("turbo:load", function() {
     });
   }
   function initTeamSwiper() {
-    if (window.innerWidth <= 576) {
-      new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".team-slider", {
-        speed: 1000,
-        slidesPerView: 1.5,
-        spaceBetween: 20
-      });
-    }
+    // if (window.innerWidth <= 576) {
+    const teamSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".team-slider", {
+      speed: 1000,
+      observer: true,
+      updateOnWindowResize: true,
+      observeParents: true,
+      watchOverflow: true,
+      slidesPerView: 1.5,
+      spaceBetween: 20
+    });
+    teamSlider.on("resize", () => {
+      if (window.innerWidth >= 576) {
+        teamSlider.destroy();
+      } else {
+        teamSlider.init();
+      }
+    });
+    // }
   }
+
   initTeamSwiper();
   window.addEventListener("orientationchange", () => {
+    console.log("changed");
     initTeamSwiper();
   });
   new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".reviews-slider", {
@@ -12841,8 +12854,42 @@ document.addEventListener("turbo:load", function() {
       });
     });
   }
+  const heroVideo = document.querySelector(".hero__video video");
+  setTimeout(() => {
+    if (heroVideo) {
+      if (window.innerWidth >= 576) {
+        heroVideo.muted = false;
+        heroVideo.volume = 0.2;
+      }
+    }
+  }, 2000);
+  const musicOff = document.querySelector(".button-sound.off");
+  const musicOn = document.querySelector(".button-sound.on");
+  if (musicOff) {
+    musicOff.addEventListener("click", () => {
+      if (musicOff.classList.contains("muted")) {
+        musicOff.classList.remove("muted");
+        heroVideo.muted = false;
+      } else {
+        musicOff.classList.add("muted");
+        heroVideo.muted = true;
+      }
+    });
+  }
+  if (musicOn) {
+    musicOn.addEventListener("click", () => {
+      if (!musicOn.classList.contains("muted")) {
+        musicOn.classList.add("muted");
+        heroVideo.muted = false;
+      } else {
+        musicOn.classList.remove("muted");
+        heroVideo.muted = true;
+      }
+    });
+  }
   })();
 
   /******/ })()
   ;
+
 })

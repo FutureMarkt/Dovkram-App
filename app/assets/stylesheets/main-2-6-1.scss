@@ -363,6 +363,11 @@ a {
   align-items: center;
   gap: 30px;
 }
+@media (max-width: 576px) {
+  .header__right {
+    gap: 15px;
+  }
+}
 
 .burger {
   --burger-width: 39px;
@@ -956,6 +961,14 @@ a {
     line-height: 30px;
   }
 }
+.card-team__pos {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
 .card-team__desc {
   font-size: 16px;
   line-height: 22px;
@@ -1108,7 +1121,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 91px;
+  gap: 60px;
   padding-top: 105px;
   padding-bottom: 150px;
 }
@@ -1175,6 +1188,12 @@ a {
 .property__content button,
 .property__content a {
   min-width: 300px;
+}
+.property__desc {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  max-width: 1024px;
 }
 .property .swiper-button-next {
   right: 116px;
@@ -1967,4 +1986,45 @@ a {
 .fancybox__thumbs .carousel__slide .fancybox__thumb::after {
   border-width: 1px !important;
   border-color: #D9C238 !important;
+}
+
+.button-sound {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+@media (max-width: 576px) {
+  .button-sound.off {
+    display: none;
+  }
+}
+.button-sound.on {
+  display: none;
+}
+@media (max-width: 576px) {
+  .button-sound.on {
+    display: block;
+  }
+}
+.button-sound g {
+  display: none;
+}
+@media (max-width: 576px) {
+  .button-sound g {
+    display: block;
+  }
+}
+.button-sound.muted g {
+  display: block;
+}
+@media (max-width: 576px) {
+  .button-sound.muted g {
+    display: none;
+  }
 }
