@@ -23,12 +23,5 @@
       %main.main
         = yield
 
-      - unless current_page?(root_path)
+      - unless current_page?(root_path) || current_page?(contacts_path)
         = render 'shared/footer'
-
--# <!--
--#   <picture>
--#     <source srcset="/images/cover.webp" type="image/webp">
--#     <img loading="lazy" src="/images/cover.jpg" class="image">
--#   </picture>
--# -->
