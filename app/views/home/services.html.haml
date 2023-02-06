@@ -17,45 +17,83 @@
     .swiper-wrapper
       .property__slide.swiper-slide
         .property__image
-          = image_tag 'services/general_contracting.jpg', alt: '', height: '298', width: '591'
+          %img{ src: image_path('services/general_contracting.jpg'), alt: 'Dov Kram Ltd. General Contracting'}
         .property__container.container
           .section-label.to-left
             %span Services
           .property__content
-            -# %span 02
-            %h1.property__title General Contracting
-            %button.property__button.btn-primary.btn-reset{"data-modal" => "high-end"} Read more
+            .property__head
+              %span{ style: 'visibility: hidden' } GC
+              -# .swiper-button-next mobile
+
+            %h1.property__title
+              GENERAL CONTRACTING
+            %p.property__desc Oversight and assistance in all aspects that relate to your property and construction. Assistance in securing terms and contracts with all service providers. Approval of all payments that are then handled by the customer or a third party service. Oversight of the project and the on-site management and construction crews.
+            -# %button.property__button.btn-primary.btn-reset{"data-modal" => "high-end"} Projects photo
       .property__slide.swiper-slide
         .property__image
-          = image_tag 'services/project_management.jpg', alt: '', height: '298', width: '591'
+          %img{ src: image_path('services/project_management.jpg'), alt: 'Dov Kram Ltd. Project Management' }
         .property__container.container
           .section-label.to-left
             %span Services
           .property__content
-            -# %span 01
-            %h1.property__title Project Management
-            %button.property__button.btn-primary.btn-reset{"data-modal" => "luxurious-property"} Read more
+            .property__head
+              %span{ style: 'visibility: hidden' } PM
+              -# .swiper-button-next mobile
+
+            %h1.property__title
+              PROJECT MANAGEMENT
+            %p.property__desc Management and Construction: Turn-Key Service with One Contract, One Point of Contact, One Address for all of your Needs.
+            %p.property__desc For the most hands off approach available in Israel which alleviates headaches and the need for day to day involvement this is the service of choice.
+            %p.property__desc From identifying a property, negotiating the purchase, financing, design and planning, permitting, building the team of engineers and consultants, selecting and purchasing the materials. Custom imports, custom manufacturing, financial management and project oversight and most importantly, one singular provider for all warranties.
+            -# %button.property__button.btn-primary.btn-reset{"data-modal" => "high-end"} Projects photo
     .swiper-button-prev
-    .swiper-button-next
+    .swiper-button-next.desktop
 
-#luxurious-property.project.modal
-  .project__container.container
-    %button.back-to.btn-reset
-      %svg{fill: "none", height: "24", viewbox: "0 0 13 29", width: "8"}
-        %path{d: "M12 28L2 14.5L12 1", stroke: "white", "stroke-width" => "2"}
-      Back
-    .project__content
-      .section-label.to-left
-        %span Project Management
-      .project__block.block-project
-        .block-project__image
-          = image_tag 'services/project_management.jpg', alt: 'Project Management', height: '478', width: '556'
-        .block-project__info
-          %h1.block-project__title.section-title Project Management
-          .block-project__desc
-            %p Oversight and assistance in all aspects that relate to your property and construction. Assistance in securing terms and contracts with all service providers. Approval of all payments that are then handled by the customer or a third party service. Oversight of the project and the on-site management and construction crews.
+-# %section.property
+-#   .property-slider.swiper
+-#     .swiper-wrapper
+-#       .property__slide.swiper-slide
+-#         .property__image
+-#           = image_tag 'services/general_contracting.jpg', alt: '', height: '298', width: '591'
+-#         .property__container.container
+-#           .section-label.to-left
+-#             %span Services
+-#           .property__content
+-#             -# %span 02
+-#             %h1.property__title General Contracting
+-#             %button.property__button.btn-primary.btn-reset{"data-modal" => "high-end"} Read more
+-#       .property__slide.swiper-slide
+-#         .property__image
+-#           = image_tag 'services/project_management.jpg', alt: '', height: '298', width: '591'
+-#         .property__container.container
+-#           .section-label.to-left
+-#             %span Services
+-#           .property__content
+-#             -# %span 01
+-#             %h1.property__title Project Management
+-#             %button.property__button.btn-primary.btn-reset{"data-modal" => "luxurious-property"} Read more
+-#     .swiper-button-prev
+-#     .swiper-button-next
 
-#high-end.project.modal
+-# #luxurious-property.project.modal
+-#   .project__container.container
+-#     %button.back-to.btn-reset
+-#       %svg{fill: "none", height: "24", viewbox: "0 0 13 29", width: "8"}
+-#         %path{d: "M12 28L2 14.5L12 1", stroke: "white", "stroke-width" => "2"}
+-#       Back
+-#     .project__content
+-#       .section-label.to-left
+-#         %span Project Management
+-#       .project__block.block-project
+-#         .block-project__image
+-#           = image_tag 'services/project_management.jpg', alt: 'Project Management', height: '478', width: '556'
+-#         .block-project__info
+-#           %h1.block-project__title.section-title Project Management
+-#           .block-project__desc
+-#             %p Oversight and assistance in all aspects that relate to your property and construction. Assistance in securing terms and contracts with all service providers. Approval of all payments that are then handled by the customer or a third party service. Oversight of the project and the on-site management and construction crews.
+
+-# #high-end.project.modal
   .project__container.container
     %button.back-to.btn-reset
       %svg{fill: "none", height: "24", viewbox: "0 0 13 29", width: "8"}
