@@ -14,18 +14,12 @@
 
     .header__right
       - if current_page?(root_path)
-        %button.button-sound.off.btn-reset
-          %svg{:fill => "none", :height => "32", :viewbox => "0 0 32 32", :width => "32", :xmlns => "http://www.w3.org/2000/svg"}
-            %path{:d => "M14.667 6.66699L8.00033 12.0003H2.66699V20.0003H8.00033L14.667 25.3337V6.66699Z", :stroke => "white", "stroke-linecap" => "round", "stroke-linejoin" => "round"}
+        %button.button-sound.btn-reset.muted
+          %svg{ fill: "none", height: "32", viewbox: "0 0 32 32", width: "32", xmlns: "http://www.w3.org/2000/svg"}
+            %path{ d: "M14.667 6.66699L8.00033 12.0003H2.66699V20.0003H8.00033L14.667 25.3337V6.66699Z", stroke: "white", "stroke-linecap" => "round", "stroke-linejoin" => "round"}
             %g
-              %path{:d => "M29.333 12L21.333 20", :stroke => "white", "stroke-linecap" => "round", "stroke-linejoin" => "round"}
-              %path{:d => "M21.333 12L29.333 20", :stroke => "white", "stroke-linecap" => "round", "stroke-linejoin" => "round"}
-        %button.button-sound.on.btn-reset
-          %svg{:fill => "none", :height => "32", :viewbox => "0 0 32 32", :width => "32", :xmlns => "http://www.w3.org/2000/svg"}
-            %path{:d => "M14.667 6.66699L8.00033 12.0003H2.66699V20.0003H8.00033L14.667 25.3337V6.66699Z", :stroke => "white", "stroke-linecap" => "round", "stroke-linejoin" => "round"}
-            %g
-              %path{:d => "M29.333 12L21.333 20", :stroke => "white", "stroke-linecap" => "round", "stroke-linejoin" => "round"}
-              %path{:d => "M21.333 12L29.333 20", :stroke => "white", "stroke-linecap" => "round", "stroke-linejoin" => "round"}
+              %path{ d: "M29.333 12L21.333 20", stroke: "white", "stroke-linecap" => "round", "stroke-linejoin" => "round"}
+              %path{ d: "M21.333 12L29.333 20", stroke: "white", "stroke-linecap" => "round", "stroke-linejoin" => "round"}
       -# %button.header__lang.btn-reset
         עברית
       .header__burger.burger

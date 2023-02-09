@@ -5,9 +5,10 @@
     .gallery__content
       %h1.gallery__title.section-title Gallery
       .gallery__grid
-        - 35.times do |ix|
-          - ix += 1
-          %a.gallery__item.lg{"data-fancybox" => "gallery", href: image_path("gallery/gallery_#{ix}.webp") }
-            %picture
-              %source{ srcset: image_path("gallery/gallery_#{ix}.webp"), type: "image/webp" }
-                %img.image{src: image_path("gallery/gallery_#{ix}.webp") }
+        - (1..35).each_slice(12) do |imgs|
+          - imgs.each do |img|
+            - cls = cycle("lg span-2", "lg span", "span", "span", "span", "lg span-2", "lg span", "lg span", "lg span-2-revert", "span", "span", "span")
+            %a.gallery__item{ class: cls, "data-fancybox" => "gallery", href: image_path("gallery/gallery_#{img}.webp") }
+              %picture
+                %source{ srcset: image_path("gallery/gallery_#{img}.webp"), type: "image/webp" }
+                  %img.image{ src: image_path("gallery/gallery_#{img}.webp") }

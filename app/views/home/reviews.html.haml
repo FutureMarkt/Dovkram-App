@@ -13,8 +13,7 @@
               .block-reviews__content
                 %span First Prize, Large Apartment of 2022
                 .block-reviews__desc
-                  .trix-content
-                    Dov Kram LTD was privileged to be the General Contractor on the 'Large Apartment of 2022' award given to the designer, Erez Hyatt by בניין ודיור
+                  %p Dov Kram LTD was privileged to be the General Contractor on the 'Large Apartment of 2022' award given to the designer, Erez Hyatt by בניין ודיור
 
           .reviews__slide.swiper-slide
             .reviews__block.block-reviews
@@ -23,10 +22,8 @@
               .block-reviews__content
                 %span Trade Magazine article in Binyan V'Diyur
                 .block-reviews__desc
-                  .trix-content
-                    "Between the projects, Dov is busy moving from site to site throughout the country. We managed to catch the founder and owner of the execution management company - Dov Kram Ltd., to talk about his company."
-                  %p{ style: 'height: 120px;'}
-                  = link_to 'View article', 'https://www.bvd.co.il/%d7%9e%d7%a2%d7%a6%d7%91%d7%99%d7%9d-%d7%95%d7%90%d7%93%d7%a8%d7%99%d7%9b%d7%9c%d7%99%d7%9d-%d7%9b%d7%9c-%d7%9e%d7%94-%d7%a9%d7%9b%d7%93%d7%90%d7%99-%d7%9c%d7%93%d7%a2%d7%aa/%d7%aa%d7%95%d7%9b%d7%9f-%d7%a9%d7%99%d7%95%d7%95%d7%a7%d7%99/%d7%97%d7%91%d7%a8%d7%aa-%d7%94%d7%a0%d7%99%d7%94%d7%95%d7%9c-%d7%91%d7%99%d7%a6%d7%95%d7%a2-%d7%93%d7%91-%d7%a7%d7%a8%d7%90%d7%9d-%d7%91%d7%a2%d7%9e/', style: 'color: #D9C238;'
+                  %p "Between the projects, Dov is busy moving from site to site throughout the country. We managed to catch the founder and owner of the execution management company - Dov Kram Ltd., to talk about his company."
+                = link_to 'View article', 'https://www.bvd.co.il/%d7%9e%d7%a2%d7%a6%d7%91%d7%99%d7%9d-%d7%95%d7%90%d7%93%d7%a8%d7%99%d7%9b%d7%9c%d7%99%d7%9d-%d7%9b%d7%9c-%d7%9e%d7%94-%d7%a9%d7%9b%d7%93%d7%90%d7%99-%d7%9c%d7%93%d7%a2%d7%aa/%d7%aa%d7%95%d7%9b%d7%9f-%d7%a9%d7%99%d7%95%d7%95%d7%a7%d7%99/%d7%97%d7%91%d7%a8%d7%aa-%d7%94%d7%a0%d7%99%d7%94%d7%95%d7%9c-%d7%91%d7%99%d7%a6%d7%95%d7%a2-%d7%93%d7%91-%d7%a7%d7%a8%d7%90%d7%9d-%d7%91%d7%a2%d7%9e/', class: 'block-reviews__link'
 
           .reviews__slide.swiper-slide
             .reviews__block.block-reviews
@@ -35,10 +32,8 @@
               .block-reviews__content
                 %span Maimonides School, Boston
                 .block-reviews__desc
-                  .trix-content
-                    Dov Kram's former school in Boston, MA featured Dov and a story about his company in one of their publications
-                  %p{ style: 'height: 120px;'}
-                  = link_to 'View publication', 'https://dovkram.s3.eu-west-2.amazonaws.com/maimonides_article.pdf', style: 'color: #D9C238;'
+                  %p Dov Kram's former school in Boston, MA featured Dov and a story about his company in one of their publications
+                = link_to 'View publication', 'https://dovkram.s3.eu-west-2.amazonaws.com/maimonides_article.pdf', class: 'block-reviews__link'
 
           - @reviews = Review.all
           - ix = rand(0..4) * 10
@@ -47,7 +42,6 @@
             .reviews__slide.swiper-slide
               .reviews__block.block-reviews
                 .block-reviews__image
-                  -# = image_tag "reviews/image-#{rand(1..6)}.jpg", alt: '', height: '576', width: '536'
                   = image_tag "gallery/gallery_#{ix}.webp", alt: '', height: '576', width: '536'
                 .block-reviews__content
                   %span= review.name

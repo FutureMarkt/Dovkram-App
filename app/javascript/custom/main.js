@@ -12858,13 +12858,11 @@ document.addEventListener("turbo:load", function() {
   setTimeout(() => {
     if (heroVideo) {
       if (window.innerWidth >= 576) {
-        heroVideo.muted = false;
         heroVideo.volume = 0.2;
       }
     }
   }, 2000);
-  const musicOff = document.querySelector(".button-sound.off");
-  const musicOn = document.querySelector(".button-sound.on");
+  const musicOff = document.querySelector(".button-sound");
   if (musicOff) {
     musicOff.addEventListener("click", () => {
       if (musicOff.classList.contains("muted")) {
@@ -12872,17 +12870,6 @@ document.addEventListener("turbo:load", function() {
         heroVideo.muted = false;
       } else {
         musicOff.classList.add("muted");
-        heroVideo.muted = true;
-      }
-    });
-  }
-  if (musicOn) {
-    musicOn.addEventListener("click", () => {
-      if (!musicOn.classList.contains("muted")) {
-        musicOn.classList.add("muted");
-        heroVideo.muted = false;
-      } else {
-        musicOn.classList.remove("muted");
         heroVideo.muted = true;
       }
     });
