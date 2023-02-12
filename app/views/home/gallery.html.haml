@@ -1,9 +1,9 @@
 %section.gallery
   .gallery__container.container
     .section-label.to-left
-      %span Gallery
+      %span= t('menu.gallery')
     .gallery__content
-      %h1.gallery__title.section-title Gallery
+      %h1.gallery__title.section-title= t('menu.gallery')
       .gallery__grid
         - (1..35).each_slice(12) do |imgs|
           - imgs.each do |img|

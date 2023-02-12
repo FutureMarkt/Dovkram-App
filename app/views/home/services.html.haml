@@ -2,50 +2,46 @@
   .services__container.container
     .services__inner
       .section-label.to-left
-        %span Services
+        %span= t('menu.services')
       .services__content
         .services__block.block-services.active
           .block-services__image
             = image_tag 'services/general_contracting.jpg', alt: '', height: '298', width: '591'
-          %h3.block-services__title General Contracting
+          %h3.block-services__title= t('services.general_contracting.title')
         .services__block.block-services
           .block-services__image
             = image_tag 'services/project_management.jpg', alt: '', height: '298', width: '591'
-          %h3.block-services__title Project Management
+          %h3.block-services__title= t('services.project_management.title')
 %section.property
   .property-slider.swiper
     .swiper-wrapper
       .property__slide.swiper-slide
         .property__image
-          %img{ src: image_path('services/general_contracting.jpg'), alt: 'Dov Kram Ltd. General Contracting'}
+          %img{ src: image_path('services/general_contracting.jpg'), alt: t('services.general_contacting.image.alt')}
         .property__container.container
           .section-label.to-left
-            %span Services
+            %span= t('menu.services')
           .property__content
             .property__head
               %span{ style: 'visibility: hidden' } GC
               -# .swiper-button-next mobile
 
-            %h1.property__title.property__title-sm
-              GENERAL CONTRACTING
-            %p.property__desc Oversight and assistance in all aspects that relate to your property and construction. Assistance in securing terms and contracts with all service providers. Approval of all payments that are then handled by the customer or a third party service. Oversight of the project and the on-site management and construction crews.
+            %h1.property__title.property__title-sm= t('services.general_contracting.title')
+            %p.property__desc= t('services.general_contracting.desc')
             -# %button.property__button.btn-primary.btn-reset{"data-modal" => "high-end"} Projects photo
       .property__slide.swiper-slide
         .property__image
-          %img{ src: image_path('services/project_management.jpg'), alt: 'Dov Kram Ltd. Project Management' }
+          %img{ src: image_path('services/project_management.jpg'), alt: t('services.project_management.image.alt') }
         .property__container.container
           .section-label.to-left
-            %span Services
+            %span= t('menu.services')
           .property__content
             .property__head
               %span{ style: 'visibility: hidden' } PM
               -# .swiper-button-next mobile
 
-            %h1.property__title.property__title-sm
-              PROJECT MANAGEMENT
-            %p.property__desc Management and Construction: Turn-Key Service with One Contract, One Point of Contact, One Address for all of your Needs.
-            %p.property__desc For the most hands off approach available in Israel which alleviates headaches and the need for day to day involvement this is the service of choice.
-            %p.property__desc From identifying a property, negotiating the purchase, financing, design and planning, permitting, building the team of engineers and consultants, selecting and purchasing the materials. Custom imports, custom manufacturing, financial management and project oversight and most importantly, one singular provider for all warranties.
+            %h1.property__title.property__title-sm= t('services.project_management.title')
+            = raw t('services.project_management.desc')
             -# %button.property__button.btn-primary.btn-reset{"data-modal" => "high-end"} Projects photo
     .swiper-button-prev
     .swiper-button-next.desktop

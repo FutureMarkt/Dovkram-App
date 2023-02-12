@@ -3,63 +3,24 @@
     .about__video
       %img{ src: image_path('about/about_dov_kram.webp'), alt: "About Dov Kram Ltd." }
     .about__content
-      -# %h1.about__title.section-title About Us
-      %h1.about__title.section-title{ style: 'font-size: 24px; line-height: 34px;' } General Contractor and Construction Project Management Firm
-      .about__info
-        %p.about__desc Dov Kram LTD is a one stop shop for all construction and project management needs. Streamlining and simplifying what is typically seen as a complicated and cumbersome process and allowing for their customers to make design decisions and leaving the headaches of the day to day to Dov Kram LTD.
-        %p.about__desc High end and luxury finishes without compromise.
-        %p.about__desc In addition to the owner and CEO’s more than two decades of high level professional experience there is a team of experts who will be working with you to produce the highest level of finish and service in the international marketplace.
+      %h1.about__title.section-title{ style: 'font-size: 24px; line-height: 34px;' }= t('about_us.title')
+      .about__info= raw t('about_us.info')
     .section-label
-      %span ABOUT US
+      %span= t('menu.about')
 %section.team
   .team__container.container
     .section-label.to-left
-      %span Our Team
+      %span= t('menu.our_team')
     .team__content
-      -# %h2.team__title.section-title Our Team
       .team-slider.swiper
         .team__grid.swiper-wrapper
-          .swiper-slide
-            .team__card.card-team
-              .card-team__image
-                %picture
-                  %source{ srcset: image_path('team/Elyashiv_Kimchi.webp'), type: "image/webp" }
-                  = image_tag('team/Elyashiv_Kimchi.jpg', width: "216", height: "325")
-              %h3.card-team__name Elyashiv Kimchi
-              %span.card-team__pos COO
-              %p.card-team__desc Manages day to day Operations of the Company and On Site Management.
-          .swiper-slide
-            .team__card.card-team
-              .card-team__image
-                %picture
-                  %source{ srcset: image_path('team/Sarit_Izhakian.webp'), type: "image/webp" }
-                  = image_tag('team/Sarit_Izhakian.jpg', width: "216", height: "325")
-              %h3.card-team__name Sarit Izhakian
-              %span.card-team__pos CFO
-              %p.card-team__desc Manages Financial Operations of the Company.
-          .swiper-slide
-            .team__card.card-team
-              .card-team__image
-                %picture
-                  %source{ srcset: image_path('team/Dov_Kram.webp'), type: "image/webp" }
-                  = image_tag('team/Dov_Kram.jpg', width: "216", height: "325")
-              %h3.card-team__name Dov Kram
-              %span.card-team__pos CEO and Founder of Dov Kram LTD
-          .swiper-slide
-            .team__card.card-team
-              .card-team__image
-                %picture
-                  %source{ srcset: image_path('team/Liron_Dotan.webp'), type: "image/webp" }
-                  = image_tag('team/Liron_Dotan.jpg', width: "216", height: "325")
-              %h3.card-team__name Liron Dotan
-              %span.card-team__pos VP of Relations and Purchasing
-              %p.card-team__desc Manages Negotiations and Contact with all Suppliers and Service Providers.
-          .swiper-slide
-            .team__card.card-team
-              .card-team__image
-                %picture
-                  %source{ srcset: image_path('team/Abraham_Chacra.webp'), type: "image/webp" }
-                  = image_tag('team/Abraham_Chacra.jpg', width: "216", height: "325")
-              %h3.card-team__name Abraham Chacra
-              %span.card-team__pos VP of Administration
-              %p.card-team__desc Leads Administrative and Back Office Operations.
+          - %w(elyashiv_kimchi sarit_izhakian dov_kram liron_dotan abraham_chacra).each do |nm|
+            .swiper-slide
+              .team__card.card-team
+                .card-team__image
+                  %picture
+                    %source{ srcset: image_path("team/#{nm}.webp"), type: "image/webp" }
+                    = image_tag("team/#{nm}.jpg", width: "216", height: "325")
+                %h3.card-team__name= t("our_team.#{nm}.name")
+                %span.card-team__pos= t("our_team.#{nm}.title")
+                %p.card-team__desc= t("our_team.#{nm}.description")

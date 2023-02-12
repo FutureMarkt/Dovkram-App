@@ -73,4 +73,6 @@ gem 'devise'
 gem 'haml-rails'
 gem 'simple_form'
 
+gem 'globalize'
+
 ruby "3.2.0"

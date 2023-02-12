@@ -4,7 +4,7 @@
       %a.back-to{ href: root_url }
         %svg{:fill => "none", :height => "24", :viewbox => "0 0 13 29", :width => "8"}
           %path{:d => "M12 28L2 14.5L12 1", :stroke => "white", "stroke-width" => "2"}
-        %span Main page
+        %span= t('menu.main_page')
     - else
       %a.header__logo.logo{ href: root_path }
         = image_tag('logo-left.svg', alt: "Dov Kram Ltd.")
@@ -20,25 +20,24 @@
             %g
               %path{ d: "M29.333 12L21.333 20", stroke: "white", "stroke-linecap" => "round", "stroke-linejoin" => "round"}
               %path{ d: "M21.333 12L29.333 20", stroke: "white", "stroke-linecap" => "round", "stroke-linejoin" => "round"}
-      -# %button.header__lang.btn-reset
-        עברית
+      %a.header__lang.btn-reset{ href: "?lang=#{I18n.locale.eql?(:he) ? 'en' : 'he'}"}= t('menu.lang_switch')
       .header__burger.burger
         .burger__line
 
     %nav.nav
       %ul.nav-list.list-reset
         %li.nav-list__item
-          %a.nav-list__link{ href: root_path } Home
+          %a.nav-list__link{ href: root_path }= t('menu.home')
         %li.nav-list__item
-          %a.nav-list__link{ href: about_path } About Us
+          %a.nav-list__link{ href: about_path }= t('menu.about')
         %li.nav-list__item
-          %a.nav-list__link{ href: services_path } Services
+          %a.nav-list__link{ href: services_path }= t('menu.services')
         %li.nav-list__item
-          %a.nav-list__link{ href: gallery_path } Gallery
+          %a.nav-list__link{ href: gallery_path }= t('menu.gallery')
         %li.nav-list__item
-          %a.nav-list__link{ href: reviews_path } Reviews
+          %a.nav-list__link{ href: reviews_path }= t('menu.reviews')
         %li.nav-list__item
-          %a.nav-list__link{ href: contacts_path } Contact Us
+          %a.nav-list__link{ href: contacts_path }= t('menu.contacts')
       .nav-links
         %a{ href: "https://www.facebook.com/DovKramLTD/" }
           %svg{:fill => "none", :height => "21", :viewbox => "0 0 12 21", :width => "12", :xmlns => "http://www.w3.org/2000/svg"}

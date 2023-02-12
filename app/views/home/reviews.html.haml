@@ -1,9 +1,9 @@
 %section.reviews
   .reviews__container.container
-    %h1.reviews__title.section-title What our customers say?
+    %h1.reviews__title.section-title= t('reviews.title')
     .reviews__content
       .section-label.to-left
-        %span REVIEWS
+        %span= t('menu.reviews')
       .reviews-slider.swiper
         .swiper-wrapper
           .reviews__slide.swiper-slide
@@ -11,29 +11,26 @@
               .block-reviews__image{ style: 'height: 393px' }
                 = image_tag "reviews/first_prize_residential_apartments_israel_2022.webp", alt: '', width: '536'
               .block-reviews__content
-                %span First Prize, Large Apartment of 2022
-                .block-reviews__desc
-                  %p Dov Kram LTD was privileged to be the General Contractor on the 'Large Apartment of 2022' award given to the designer, Erez Hyatt by בניין ודיור
+                %span= t('reviews.first_prize.title')
+                .block-reviews__desc= raw t('reviews.first_prize.desc')
 
           .reviews__slide.swiper-slide
             .reviews__block.block-reviews
               .block-reviews__image
                 = image_tag "reviews/dov_kram_on_stair.webp", alt: '', width: '536'
               .block-reviews__content
-                %span Trade Magazine article in Binyan V'Diyur
-                .block-reviews__desc
-                  %p "Between the projects, Dov is busy moving from site to site throughout the country. We managed to catch the founder and owner of the execution management company - Dov Kram Ltd., to talk about his company."
-                = link_to 'View article', 'https://www.bvd.co.il/%d7%9e%d7%a2%d7%a6%d7%91%d7%99%d7%9d-%d7%95%d7%90%d7%93%d7%a8%d7%99%d7%9b%d7%9c%d7%99%d7%9d-%d7%9b%d7%9c-%d7%9e%d7%94-%d7%a9%d7%9b%d7%93%d7%90%d7%99-%d7%9c%d7%93%d7%a2%d7%aa/%d7%aa%d7%95%d7%9b%d7%9f-%d7%a9%d7%99%d7%95%d7%95%d7%a7%d7%99/%d7%97%d7%91%d7%a8%d7%aa-%d7%94%d7%a0%d7%99%d7%94%d7%95%d7%9c-%d7%91%d7%99%d7%a6%d7%95%d7%a2-%d7%93%d7%91-%d7%a7%d7%a8%d7%90%d7%9d-%d7%91%d7%a2%d7%9e/', class: 'block-reviews__link'
+                %span= t('reviews.trade_magazine.title')
+                .block-reviews__desc= raw t('reviews.trade_magazine.desc')
+                = link_to t('reviews.trade_magazine.link_name'), 'https://www.bvd.co.il/%d7%9e%d7%a2%d7%a6%d7%91%d7%99%d7%9d-%d7%95%d7%90%d7%93%d7%a8%d7%99%d7%9b%d7%9c%d7%99%d7%9d-%d7%9b%d7%9c-%d7%9e%d7%94-%d7%a9%d7%9b%d7%93%d7%90%d7%99-%d7%9c%d7%93%d7%a2%d7%aa/%d7%aa%d7%95%d7%9b%d7%9f-%d7%a9%d7%99%d7%95%d7%95%d7%a7%d7%99/%d7%97%d7%91%d7%a8%d7%aa-%d7%94%d7%a0%d7%99%d7%94%d7%95%d7%9c-%d7%91%d7%99%d7%a6%d7%95%d7%a2-%d7%93%d7%91-%d7%a7%d7%a8%d7%90%d7%9d-%d7%91%d7%a2%d7%9e/', class: 'block-reviews__link'
 
           .reviews__slide.swiper-slide
             .reviews__block.block-reviews
               .block-reviews__image
                 = image_tag "reviews/maimonides_newsletter.webp", alt: '', width: '536'
               .block-reviews__content
-                %span Maimonides School, Boston
-                .block-reviews__desc
-                  %p Dov Kram's former school in Boston, MA featured Dov and a story about his company in one of their publications
-                = link_to 'View publication', 'https://dovkram.s3.eu-west-2.amazonaws.com/maimonides_article.pdf', class: 'block-reviews__link'
+                %span= t('reviews.maimonides.title')
+                .block-reviews__desc= raw t('reviews.maimonides.desc')
+                = link_to t('reviews.maimonides.link_name'), 'https://dovkram.s3.eu-west-2.amazonaws.com/maimonides_article.pdf', class: 'block-reviews__link'
 
           - @reviews = Review.all
           - ix = rand(0..4) * 10

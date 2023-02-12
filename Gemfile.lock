@@ -98,6 +98,10 @@ GEM
     ffi (1.15.5)
     globalid (1.1.0)
       activesupport (>= 5.0)
+    globalize (6.2.1)
+      activemodel (>= 4.2, < 7.1)
+      activerecord (>= 4.2, < 7.1)
+      request_store (~> 1.0)
     haml (6.1.1)
       temple (>= 0.8.2)
       thor
@@ -190,6 +194,8 @@ GEM
     regexp_parser (2.6.2)
     reline (0.3.2)
       io-console (~> 0.5)
+    request_store (1.5.1)
+      rack (>= 1.4)
     responders (3.0.1)
       actionpack (>= 5.0)
       railties (>= 5.0)
@@ -255,6 +261,7 @@ DEPENDENCIES
   capybara
   debug
   devise
+  globalize
   haml-rails
   image_processing (~> 1.2)
   importmap-rails

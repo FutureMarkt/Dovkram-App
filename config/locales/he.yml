@@ -1,0 +1,77 @@
+he:
+
+  menu:
+    main_page: דף הבית
+    home: דף הבית
+    about: עלינו
+    services: שירותים
+    gallery: גלריה
+    reviews: עדויות
+    contacts: צור קשר
+    our_team: הצוות שלנו
+
+    lang_switch: Eng
+
+  about_us:
+    title: עלינו
+    info:
+
+  our_team:
+    title: הצוות שלנו
+    elyashiv_kimchi:
+      name: אלישיב קמחי
+      title: סמנכ"ל תפעול ופיתוח
+      description: ''
+
+    sarit_izhakian:
+      name: שרית יצחקיאן
+      title: סמנכ"ל כספים
+      description: ''
+
+    dov_kram:
+      name: דב קראם
+      title: מייסד ומנכ"ל החברה
+      description: ''
+
+    liron_dotan:
+      name: לירון דותן
+      title: מנהלת תחום התקשרויות, רכש ואספקה
+      description: ''
+
+    abraham_chacra:
+      name: אברהם צ'אקרה
+      title: מנהל אדמיניסטרטיבי
+      description: ''
+
+  services:
+    general_contracting:
+      title: General Contracting
+      desc: Oversight and assistance in all aspects that relate to your property and construction. Assistance in securing terms and contracts with all service providers. Approval of all payments that are then handled by the customer or a third party service. Oversight of the project and the on-site management and construction crews.
+      image:
+        alt: Dov Kram Ltd. General Contracting
+
+    project_management:
+      title: Project Management
+      desc: "<p class='property__desc'>Management and Construction: Turn-Key Service with One Contract, One Point of Contact, One Address for all of your Needs.</p><p class='property__desc'>For the most hands off approach available in Israel which alleviates headaches and the need for day to day involvement this is the service of choice.</p><p class='property__desc'>From identifying a property, negotiating the purchase, financing, design and planning, permitting, building the team of engineers and consultants, selecting and purchasing the materials. Custom imports, custom manufacturing, financial management and project oversight and most importantly, one singular provider for all warranties.</p>"
+      image:
+        alt: Dov Kram Ltd. Project Management
+
+  reviews:
+    title: What our customers say?
+    first_prize:
+      title: First Prize, Large Apartment of 2022
+      desc: "<p>Dov Kram LTD was privileged to be the General Contractor on the 'Large Apartment of 2022' award given to the designer, Erez Hyatt by בניין ודיור</p>"
+
+    trade_magazine:
+      title: Trade Magazine article in Binyan V'Diyur
+      desc: '<p>"Between the projects, Dov is busy moving from site to site throughout the country. We managed to catch the founder and owner of the execution management company - Dov Kram Ltd., to talk about his company."</p>'
+      link_name: View article
+
+    maimonides:
+      title: Maimonides School, Boston
+      desc: "<p>Dov Kram's former school in Boston, MA featured Dov and a story about his company in one of their publications</p>"
+      link_name: View publication
+
+  contacts:
+    jerusalem: ירושלים
+    herzliya: הרצליה
