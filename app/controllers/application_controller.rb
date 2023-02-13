@@ -8,5 +8,8 @@ class ApplicationController < ActionController::Base
     elsif params[:lang].nil?
       I18n.locale = session[:lang]
     end
+
+    @lang = I18n.locale.eql?(:he) ? 'lang' : ''
+    @rtl = I18n.locale.eql?(:he) ? 'direction: rtl;' : ''
   end
 end

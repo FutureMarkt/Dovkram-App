@@ -75,13 +75,13 @@ en:
   services:
     general_contracting:
       title: General Contracting
-      desc: Oversight and assistance in all aspects that relate to your property and construction. Assistance in securing terms and contracts with all service providers. Approval of all payments that are then handled by the customer or a third party service. Oversight of the project and the on-site management and construction crews.
+      desc: "<p class='item-property__desc'>Oversight and assistance in all aspects that relate to your property and construction. Assistance in securing terms and contracts with all service providers. Approval of all payments that are then handled by the customer or a third party service. Oversight of the project and the on-site management and construction crews.</p>"
       image:
         alt: Dov Kram Ltd. General Contracting
 
     project_management:
       title: Project Management
-      desc: "<p class='property__desc'>Management and Construction: Turn-Key Service with One Contract, One Point of Contact, One Address for all of your Needs.</p><p class='property__desc'>For the most hands off approach available in Israel which alleviates headaches and the need for day to day involvement this is the service of choice.</p><p class='property__desc'>From identifying a property, negotiating the purchase, financing, design and planning, permitting, building the team of engineers and consultants, selecting and purchasing the materials. Custom imports, custom manufacturing, financial management and project oversight and most importantly, one singular provider for all warranties.</p>"
+      desc: "<p class='item-property__desc'>Management and Construction: Turn-Key Service with One Contract, One Point of Contact, One Address for all of your Needs.<br><br>For the most hands off approach available in Israel which alleviates headaches and the need for day to day involvement this is the service of choice.<br><br>From identifying a property, negotiating the purchase, financing, design and planning, permitting, building the team of engineers and consultants, selecting and purchasing the materials. Custom imports, custom manufacturing, financial management and project oversight and most importantly, one singular provider for all warranties.</p>"
       image:
         alt: Dov Kram Ltd. Project Management
 

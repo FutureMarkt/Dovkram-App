@@ -13,8 +13,8 @@ he:
     lang_switch: Eng
 
   about_us:
-    title: עלינו
-    info:
+    title: קבלן כללי ומשרד לניהול פרויקטים בבנייה
+    info: "<p class='about__desc'>דב קרם בעיימ היא חנות אחת לכל צרכי בנייה וניהול פרויקטים. ייעול ופישוט מה שנתפס בדרך כלל כתהליך מסובך ומסורבל ומאפשר ללקוחותיהם לקבל החלטות עיצוביות ולהותיר את כאבי הראש של היום-יום לדב קרם בעיימ.</p><p class='about__desc'>גימור יוקרתי ויוקרתי ללא פשרות.</p><p class='about__desc'>בנוסף לניסיון המקצועי הגבוה ביותר משני עשורים של הבעלים והמנכייל, ישנו צוות מומחים שיעבוד איתך על מנת לייצר את רמת הגימור והשירות הגבוהים ביותר בשוק הבינלאומי.</p>"
 
   our_team:
     title: הצוות שלנו
@@ -45,19 +45,19 @@ he:
 
   services:
     general_contracting:
-      title: General Contracting
-      desc: Oversight and assistance in all aspects that relate to your property and construction. Assistance in securing terms and contracts with all service providers. Approval of all payments that are then handled by the customer or a third party service. Oversight of the project and the on-site management and construction crews.
+      title: קבלנות כללית
+      desc: "<p class='item-property__desc'> מנהלת תחום התקשרויות  מנהלת תחום התקשרויות  מנהלת תחום התקשרויות  מנהלת תחום התקשרויות  מנהלת תחום התקשרויות  מנהלת תחום התקשרויות  מנהלת תחום התקשרויות  מנהלת תחום התקשרויות</p>"
       image:
-        alt: Dov Kram Ltd. General Contracting
+        alt: Dov Kram Ltd. קבלנות כללית
 
     project_management:
-      title: Project Management
-      desc: "<p class='property__desc'>Management and Construction: Turn-Key Service with One Contract, One Point of Contact, One Address for all of your Needs.</p><p class='property__desc'>For the most hands off approach available in Israel which alleviates headaches and the need for day to day involvement this is the service of choice.</p><p class='property__desc'>From identifying a property, negotiating the purchase, financing, design and planning, permitting, building the team of engineers and consultants, selecting and purchasing the materials. Custom imports, custom manufacturing, financial management and project oversight and most importantly, one singular provider for all warranties.</p>"
+      title: ניהול פרוייקט
+      desc: "<p class='item-property__desc'> מנהלת תחום התקשרויות  מנהלת תחום התקשרויות  מנהלת תחום התקשרויות  מנהלת תחום התקשרויות  מנהלת תחום התקשרויות  מנהלת תחום התקשרויות  מנהלת תחום התקשרויות  מנהלת תחום התקשרויות<br><br> מנהלת תחום התקשרויות  מנהלת תחום התקשרויות  מנהלת תחום התקשרויות  מנהלת תחום התקשרויות  מנהלת תחום התקשרויות  מנהלת תחום התקשרויות  מנהלת תחום התקשרויות  מנהלת תחום התקשרויות<br><br> מנהלת תחום התקשרויות  מנהלת תחום התקשרויות  מנהלת תחום התקשרויות  מנהלת תחום התקשרויות  מנהלת תחום התקשרויות  מנהלת תחום התקשרויות  מנהלת תחום התקשרויות  מנהלת תחום התקשרויות</p>"
       image:
-        alt: Dov Kram Ltd. Project Management
+        alt: Dov Kram Ltd. ניהול פרוייקט
 
   reviews:
-    title: What our customers say?
+    title: מה הלקוחות שלנו אומרים?
     first_prize:
       title: First Prize, Large Apartment of 2022
       desc: "<p>Dov Kram LTD was privileged to be the General Contractor on the 'Large Apartment of 2022' award given to the designer, Erez Hyatt by בניין ודיור</p>"

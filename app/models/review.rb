@@ -1,3 +1,3 @@
 class Review < ApplicationRecord
-  has_rich_text :content
+  translates :name, :desc
 end

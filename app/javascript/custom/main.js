@@ -48,34 +48,35 @@ document.addEventListener("turbo:load", function() {
   // Подключение свайпера
 
   swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination, swiper__WEBPACK_IMPORTED_MODULE_0__.EffectFade, swiper__WEBPACK_IMPORTED_MODULE_0__.EffectCoverflow]);
-  const propertySlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".property-slider", {
-    slidesPerView: 1,
-    observer: true,
-    observeParents: true,
-    watchSlidesVisibility: true,
-    watchSlidesProgress: true,
-    effect: "coverflow",
-    speed: 1500,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
-    }
-  });
-  const propertyPagination = document.querySelectorAll(".block-services");
-  if (propertyPagination) {
-    propertySlider.on("slideChange", () => {
-      propertyPagination.forEach(p => p.classList.remove("active"));
-      propertyPagination[propertySlider.activeIndex].classList.add("active");
-    });
-    propertyPagination.forEach((element, index) => {
-      element.addEventListener("click", e => {
-        if (e.target.classList.contains("active")) return;
-        propertyPagination.forEach(p => p.classList.remove("active"));
-        element.classList.add("active");
-        propertySlider.slideTo(index);
-      });
-    });
-  }
+  // const propertySlider = new Swiper(".property-slider", {
+  //     slidesPerView: 1,
+  //     observer: true,
+  //     observeParents: true,
+  //     watchSlidesVisibility: true,
+  //     watchSlidesProgress: true,
+  //     effect: "coverflow",
+  //     speed: 1500,
+  //     navigation: {
+  //         nextEl: ".swiper-button-next",
+  //         prevEl: ".swiper-button-prev",
+  //     },
+  // });
+  // const propertyPagination = document.querySelectorAll(".block-services");
+  // if (propertyPagination) {
+  //     propertySlider.on("slideChange", () => {
+  //         propertyPagination.forEach((p) => p.classList.remove("active"));
+  //         propertyPagination[propertySlider.activeIndex].classList.add("active");
+  //     });
+  //     propertyPagination.forEach((element, index) => {
+  //         element.addEventListener("click", (e) => {
+  //             if (e.target.classList.contains("active")) return;
+  //             propertyPagination.forEach((p) => p.classList.remove("active"));
+  //             element.classList.add("active");
+  //             propertySlider.slideTo(index);
+  //         });
+  //     });
+  // }
+
   function initTeamSwiper() {
     // if (window.innerWidth <= 576) {
     const teamSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".team-slider", {
@@ -12817,6 +12818,7 @@ document.addEventListener("turbo:load", function() {
   const burger = document.querySelector(".burger");
   const menu = document.querySelector(".nav");
   const siteContainer = document.querySelector(".site-container");
+  const links = document.querySelectorAll(".nav-list__link");
   if (burger) {
     burger.addEventListener("click", () => {
       toggleClass(burger, "active");
@@ -12829,6 +12831,18 @@ document.addEventListener("turbo:load", function() {
         toggleClass(menu, "show");
         toggleClass(siteContainer, "hidden");
       }
+    });
+    links.forEach(link => {
+      link.addEventListener("click", e => {
+        e.preventDefault();
+        const href = link.getAttribute("href");
+        toggleClass(burger, "active");
+        toggleClass(menu, "show");
+        toggleClass(siteContainer, "hidden");
+        setTimeout(() => {
+          window.location.href = href;
+        }, 500);
+      });
     });
   }
   const modals = document.querySelectorAll(".modal");
@@ -12873,6 +12887,28 @@ document.addEventListener("turbo:load", function() {
         heroVideo.muted = true;
       }
     });
+  }
+  const propertyTabs = document.querySelectorAll(".property__tab");
+  const propertyContent = document.querySelectorAll(".property__item");
+  if (propertyTabs && propertyContent) {
+    propertyTabs.forEach((tab, index) => {
+      tab.addEventListener("click", e => {
+        e.preventDefault();
+        if (tab.classList.contains("active")) return;
+        propertyTabs.forEach(t => removeClass(t, "active"));
+        propertyContent.forEach(c => removeClass(c, "active"));
+        addClass(tab, "active");
+        addClass(propertyContent[index], "active");
+      });
+    });
+  }
+  const animSections = document.querySelectorAll(".section-animation");
+  if (animSections) {
+    setTimeout(() => {
+      animSections.forEach(section => {
+        removeClass(section, "section-animation");
+      });
+    }, 800);
   }
   })();
 

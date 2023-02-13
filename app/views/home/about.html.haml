@@ -1,4 +1,4 @@
-%section.about
+%section.about.section-animation{ class: @lang, style: @rtl }
   .about__container.container
     .about__video
       %img{ src: image_path('about/about_dov_kram.webp'), alt: "About Dov Kram Ltd." }
@@ -7,7 +7,7 @@
       .about__info= raw t('about_us.info')
     .section-label
       %span= t('menu.about')
-%section.team
+%section.team.section-animation{ class: @lang, style: @rtl }
   .team__container.container
     .section-label.to-left
       %span= t('menu.our_team')

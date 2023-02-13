@@ -1,4 +1,4 @@
-%section.reviews
+%section.reviews.section-animation{ class: @lang, style: @rtl }
   .reviews__container.container
     %h1.reviews__title.section-title= t('reviews.title')
     .reviews__content
@@ -43,7 +43,7 @@
                 .block-reviews__content
                   %span= review.name
                   .block-reviews__desc
-                    = review.content
+                    = simple_format review.desc
             - ix += 1
 
         .swiper-button-prev

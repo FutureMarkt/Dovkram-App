@@ -1,47 +1,20 @@
-%section.services
-  .services__container.container
-    .services__inner
-      .section-label.to-left
-        %span= t('menu.services')
-      .services__content
-        .services__block.block-services.active
-          .block-services__image
-            = image_tag 'services/general_contracting.jpg', alt: '', height: '298', width: '591'
-          %h3.block-services__title= t('services.general_contracting.title')
-        .services__block.block-services
-          .block-services__image
-            = image_tag 'services/project_management.jpg', alt: '', height: '298', width: '591'
-          %h3.block-services__title= t('services.project_management.title')
-%section.property
-  .property-slider.swiper
-    .swiper-wrapper
-      .property__slide.swiper-slide
-        .property__image
+%section.property.section-animation{ class: @lang, style: @rtl }
+  .property__container.container
+    .property__tabs
+      %button.property__tab.active.btn-reset= t('services.general_contracting.title')
+      %button.property__tab.btn-reset= t('services.project_management.title')
+    - rtl = 'direction: rtl;'
+    .property__items
+      .property__item.active.item-property{ style: @rtl }
+        = raw t('services.general_contracting.desc')
+        .item-property__image
           %img{ src: image_path('services/general_contracting.jpg'), alt: t('services.general_contacting.image.alt')}
-        .property__container.container
-          .section-label.to-left
-            %span= t('menu.services')
-          .property__content
-            .property__head
-              %span{ style: 'visibility: hidden' } GC
-              -# .swiper-button-next mobile
+        .section-label
+          %span= t('services.general_contracting.title')
 
-            %h1.property__title.property__title-sm= t('services.general_contracting.title')
-            %p.property__desc= t('services.general_contracting.desc')
-            -# %button.property__button.btn-primary.btn-reset{"data-modal" => "high-end"} Projects photo
-      .property__slide.swiper-slide
-        .property__image
+      .property__item.item-property{ style: @rtl }
+        = raw t('services.project_management.desc')
+        .item-property__image
           %img{ src: image_path('services/project_management.jpg'), alt: t('services.project_management.image.alt') }
-        .property__container.container
-          .section-label.to-left
-            %span= t('menu.services')
-          .property__content
-            .property__head
-              %span{ style: 'visibility: hidden' } PM
-              -# .swiper-button-next mobile
-
-            %h1.property__title.property__title-sm= t('services.project_management.title')
-            = raw t('services.project_management.desc')
-            -# %button.property__button.btn-primary.btn-reset{"data-modal" => "high-end"} Projects photo
-    .swiper-button-prev
-    .swiper-button-next.desktop
+        .section-label
+          %span= t('services.project_management.title')
