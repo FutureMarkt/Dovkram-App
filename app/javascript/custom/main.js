@@ -77,32 +77,32 @@ document.addEventListener("turbo:load", function() {
   //     });
   // }
 
-  function initTeamSwiper() {
-    // if (window.innerWidth <= 576) {
-    const teamSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".team-slider", {
-      speed: 1000,
-      observer: true,
-      updateOnWindowResize: true,
-      observeParents: true,
-      watchOverflow: true,
-      slidesPerView: 1.5,
-      spaceBetween: 20
-    });
-    teamSlider.on("resize", () => {
-      if (window.innerWidth >= 576) {
-        teamSlider.destroy();
-      } else {
-        teamSlider.init();
-      }
-    });
-    // }
-  }
+  // function initTeamSwiper() {
+  //     // if (window.innerWidth <= 576) {
+  //     const teamSlider = new Swiper(".team-slider", {
+  //         speed: 1000,
+  //         observer: true,
+  //         updateOnWindowResize: true,
+  //         observeParents: true,
+  //         watchOverflow: true,
+  //         slidesPerView: 1.5,
+  //         spaceBetween: 20,
+  //     });
+  //     teamSlider.on("resize", () => {
+  //         if (window.innerWidth >= 576) {
+  //             teamSlider.destroy();
+  //         } else {
+  //             teamSlider.init();
+  //         }
+  //     });
+  //     // }
+  // }
+  // initTeamSwiper();
+  // window.addEventListener("orientationchange", () => {
+  //     console.log("changed");
+  //     initTeamSwiper();
+  // });
 
-  initTeamSwiper();
-  window.addEventListener("orientationchange", () => {
-    console.log("changed");
-    initTeamSwiper();
-  });
   new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".reviews-slider", {
     speed: 1000,
     spaceBetween: 10,
@@ -12789,15 +12789,26 @@ document.addEventListener("turbo:load", function() {
   /* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components__WEBPACK_IMPORTED_MODULE_1__);
 
 
+  const addClass = (element, className) => element?.classList.add(className);
+  const removeClass = (element, className) => element?.classList.remove(className);
+  const toggleClass = (element, className) => element?.classList.toggle(className);
+  const heroVideo = document.querySelector(".hero__video video");
+  const heroImage = document.querySelector(".hero__image");
   setTimeout(() => {
-    document.querySelector(".hero__video video")?.setAttribute("src", "https://dovkram.s3.eu-west-2.amazonaws.com/dovkram_promo.mp4");
+    if (heroVideo) {
+      if (window.innerWidth >= 576) {
+        heroVideo.volume = 0.2;
+      }
+    }
+  }, 2000);
+  setTimeout(() => {
+    heroVideo?.setAttribute("src", "https://dovkram.s3.eu-west-2.amazonaws.com/dovkram_promo.mp4");
+    addClass(heroImage, "hide");
+    addClass(document.querySelector(".hero__video"), "show");
   }, 1500);
   setTimeout(() => {
     document.getElementById("preloader")?.remove();
   }, 250);
-  const addClass = (element, className) => element.classList.add(className);
-  const removeClass = (element, className) => element.classList.remove(className);
-  const toggleClass = (element, className) => element.classList.toggle(className);
   const header = document.querySelector(".header");
   if (header) {
     const top = window.scrollY;
@@ -12868,14 +12879,6 @@ document.addEventListener("turbo:load", function() {
       });
     });
   }
-  const heroVideo = document.querySelector(".hero__video video");
-  setTimeout(() => {
-    if (heroVideo) {
-      if (window.innerWidth >= 576) {
-        heroVideo.volume = 0.2;
-      }
-    }
-  }, 2000);
   const musicOff = document.querySelector(".button-sound");
   if (musicOff) {
     musicOff.addEventListener("click", () => {
