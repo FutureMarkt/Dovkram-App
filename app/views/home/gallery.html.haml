@@ -5,7 +5,7 @@
     .gallery__content
       %h1.gallery__title.section-title= t('menu.gallery')
       .gallery__grid
-        - (1..35).each_slice(12) do |imgs|
+        - (1..56).each_slice(12) do |imgs|
           - imgs.each do |img|
             - cls = cycle("lg span-2", "lg span", "span", "span", "span", "lg span-2", "lg span", "lg span", "lg span-2-revert", "span", "span", "span")
             %a.gallery__item{ class: cls, "data-fancybox" => "gallery", href: image_path("gallery/gallery_#{img}.webp") }
