@@ -33,13 +33,13 @@
                 = link_to t('reviews.maimonides.link_name'), 'https://dovkram.s3.eu-west-2.amazonaws.com/maimonides_article.pdf', class: 'block-reviews__link'
 
           - @reviews = Review.all
-          - ix = rand(0..4) * 10
+          - ix = rand(0..2) * 10
           - ix = 1 if ix.eql?(0)
           - @reviews.each do |review|
             .reviews__slide.swiper-slide
               .reviews__block.block-reviews
                 .block-reviews__image
-                  = image_tag "gallery/gallery_#{ix}.webp", alt: '', height: '576', width: '536'
+                  = image_tag "reviews/review_#{ix}.webp", alt: '', height: '576', width: '536', loading: 'lazy'
                 .block-reviews__content
                   %span= review.translations.find_by(locale: :en).name
                   .block-reviews__desc
