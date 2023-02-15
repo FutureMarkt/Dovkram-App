@@ -11,4 +11,4 @@
             %a.gallery__item{ class: cls, "data-fancybox" => "gallery", href: image_path("gallery/gallery_#{img}.webp") }
               %picture
                 %source{ srcset: image_path("gallery/gallery_#{img}.webp"), type: "image/webp" }
-                  %img.image{ src: image_path("gallery/gallery_#{img}.webp") }
+                  %img.image{ src: image_path("gallery/gallery_#{img}.webp"), loading: "lazy" }
