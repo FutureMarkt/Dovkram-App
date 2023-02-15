@@ -41,9 +41,9 @@
                 .block-reviews__image
                   = image_tag "gallery/gallery_#{ix}.webp", alt: '', height: '576', width: '536'
                 .block-reviews__content
-                  %span= review.name
+                  %span= review.translations.find_by(locale: :en).name
                   .block-reviews__desc
-                    = simple_format review.desc
+                    = simple_format review.translations.find_by(locale: :en).desc
             - ix += 1
 
         .swiper-button-prev
