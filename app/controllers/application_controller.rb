@@ -11,6 +11,6 @@ class ApplicationController < ActionController::Base
 
     @lang = I18n.locale.eql?(:he) ? 'lang' : ''
     # @rtl = I18n.locale.eql?(:he) ? 'direction: rtl;' : ''
-    @rtl = ''
+    # @rtl = ''
   end
 end
