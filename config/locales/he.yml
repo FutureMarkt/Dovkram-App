@@ -4,7 +4,7 @@ he:
     main_page: דף הבית
     home: דף הבית
     about: עלינו
-    services: שירותים
+    services: שרות
     gallery: גלריה
     reviews: עדויות
     contacts: צור קשר
@@ -45,10 +45,10 @@ he:
 
   services:
     general_contracting:
-      title: קבלנות כללית
+      title: ניהול ביצוע
       desc: "<p class='item-property__desc'> מנהלת תחום התקשרויות  מנהלת תחום התקשרויות  מנהלת תחום התקשרויות  מנהלת תחום התקשרויות  מנהלת תחום התקשרויות  מנהלת תחום התקשרויות  מנהלת תחום התקשרויות  מנהלת תחום התקשרויות</p>"
       image:
-        alt: Dov Kram Ltd. קבלנות כללית
+        alt: Dov Kram Ltd. ניהול ביצוע
 
     project_management:
       title: ניהול פרוייקט
