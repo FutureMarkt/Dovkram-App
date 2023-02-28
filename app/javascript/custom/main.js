@@ -12802,7 +12802,7 @@ document.addEventListener("turbo:load", function() {
     }
   }, 2000);
   setTimeout(() => {
-    heroVideo?.setAttribute("src", "https://dovkram.s3.eu-west-2.amazonaws.com/dovkram_promo.mp4");
+    heroVideo?.setAttribute("src", "https://dovkram.s3.eu-west-2.amazonaws.com/dovkram_promo_2_28.m4v");
     addClass(heroImage, "hide");
     addClass(document.querySelector(".hero__video"), "show");
   }, 1500);
