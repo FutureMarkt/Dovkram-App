@@ -1,17 +1,17 @@
-%section.about.section-animation{ class: @lang, style: @rtl }
+%section.about.section-animation{ class: @lang }
   .about__container.container
-    .about__video
+    .about__video{ style: @rtl }
       %img{ src: image_path('about/about_dov_kram.webp'), alt: "About Dov Kram Ltd." }
-    .about__content
-      %h1.about__title.section-title{ style: 'font-size: 24px; line-height: 34px;' }= t('about_us.title')
-      .about__info= raw t('about_us.info')
+    .about__content{ style: "max-height: 499px; overflow: auto; #{@rtl}" }
+      %h1.about__title.section-title{ style: "#{"font-size: 24px; line-height: 34px;" if @lang.empty?}" }= t('about_us.title')
+      .about__info{ style: @rtl }= raw t('about_us.info')
     .section-label
       %span= t('menu.about')
-%section.team.section-animation{ class: @lang, style: @rtl }
+%section.team.section-animation{ class: @lang }
   .team__container.container
     .section-label.to-left
       %span= t('menu.our_team')
-    .team__content
+    .team__content{ style: @rtl }
       .team-slider.swiper
         .team__grid.swiper-wrapper
           - %w(elyashiv_kimchi sarit_izhakian dov_kram liron_dotan abraham_chacra).each do |nm|

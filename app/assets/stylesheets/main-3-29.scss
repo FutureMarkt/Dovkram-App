@@ -872,6 +872,17 @@ section {
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
+
+.about__content::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.about__content {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 @media (max-width: 1300px) {
   .about__content {
     -ms-flex-preferred-size: 40%;
