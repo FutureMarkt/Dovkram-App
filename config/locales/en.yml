@@ -42,6 +42,16 @@ en:
 
     lang_switch: עברית
 
+  page_title:
+    main_page: Dov Kram, Ltd.
+    home: Home
+    about: About Us
+    services: Services
+    gallery: Gallery
+    reviews: Reviews
+    contacts: Contact Us
+    our_team: Our Team
+
   about_us:
     title:  General Contractor and Construction Project Management Firm
     info: "<p class='about__desc'>Dov Kram LTD is a one stop shop for all construction and project management needs. Streamlining and simplifying what is typically seen as a complicated and cumbersome process and allowing for their customers to make design decisions and leaving the headaches of the day to day to Dov Kram LTD.</p><p class='about__desc'>High end and luxury finishes without compromise.</p><p class='about__desc'>In addition to the owner and CEO's more than two decades of high level professional experience there is a team of experts who will be working with you to produce the highest level of finish and service in the international marketplace.</p>"

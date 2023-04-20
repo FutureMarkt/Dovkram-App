@@ -1,5 +1,5 @@
 !!!
-%html.page{ lang: "en" }
+%html.page{ lang: I18n.locale.to_s }
   %head
     / Google tag (gtag.js)
     %script{ async: "", src: "https://www.googletagmanager.com/gtag/js?id=G-HQVXTGH801" }
@@ -22,7 +22,7 @@
     = csrf_meta_tags
     = csp_meta_tag
 
-    %title Dov Kram, Ltd.
+    %title= "#{t('page_title.main_page')} #{content_for?(:title) ? "| #{yield(:title)}" : ''}"
 
     = stylesheet_link_tag "application", "data-turbo-track": "reload"
     = javascript_importmap_tags

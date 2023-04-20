@@ -9,8 +9,17 @@ he:
     reviews: כתבות ולקוחות ממליצים
     contacts: צור קשר
     our_team: הצוות שלנו
-
     lang_switch: Eng
+
+  page_title:
+    main_page: דב קראם בע"מ
+    home: דף הבית
+    about: הסיפור שלנו
+    services: השירותים שלנו
+    gallery: גלריה ופרוייקטים
+    reviews: כתבות ולקוחות ממליצים
+    contacts: צור קשר
+    our_team: הצוות שלנו
 
   about_us:
     title: הסיפור שלנו

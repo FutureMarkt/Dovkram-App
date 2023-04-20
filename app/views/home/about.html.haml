@@ -1,7 +1,10 @@
+= content_for :title do
+  = t('page_title.about')
+
 %section.about.section-animation{ class: @lang }
   .about__container.container
     .about__video{ style: @rtl }
-      %img{ src: image_path('about/about_dov_kram.webp'), alt: "About Dov Kram Ltd." }
+      %img{ src: image_path('about/about_dov_kram.webp'), alt: t('page_title.about') }
     .about__content{ style: "max-height: 499px; overflow: auto; #{@rtl}" }
       %h1.about__title.section-title{ style: "#{"font-size: 24px; line-height: 34px;" if @lang.empty?}" }= t('about_us.title')
       .about__info{ style: @rtl }= raw t('about_us.info')

@@ -12836,6 +12836,11 @@ document.addEventListener("turbo:load", function() {
       toggleClass(menu, "show");
       toggleClass(siteContainer, "hidden");
     });
+    // burger.addEventListener("keydown", () => {
+    //   toggleClass(burger, "active");
+    //   toggleClass(menu, "show");
+    //   toggleClass(siteContainer, "hidden");
+    // });
     siteContainer.addEventListener("click", e => {
       if (e.target.classList.contains("hidden")) {
         toggleClass(burger, "active");
