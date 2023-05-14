@@ -11,7 +11,7 @@
         - (1..56).each_slice(12) do |imgs|
           - imgs.each do |img|
             - cls = cycle("lg span-2", "lg span", "span", "span", "span", "lg span-2", "lg span", "lg span", "lg span-2-revert", "span", "span", "span")
-            %a.gallery__item{ class: cls, "data-fancybox" => "gallery", href: image_path("gallery/gallery_#{img}.webp") }
+            %a.gallery__item{ class: cls, "data-fancybox" => "gallery", href: image_path("gallery/gallery_#{img}.webp"), aria: { label: t('gallery.zoom_link') } }
               %picture
                 %source{ srcset: image_path("gallery/gallery_#{img}.webp"), type: "image/webp" }
-                  %img.image{ src: image_path("gallery/gallery_#{img}.webp"), loading: "lazy" }
+                %img.image{ src: image_path("gallery/gallery_#{img}.webp"), loading: "lazy", alt: "#{t('gallery.image_alt')} ##{img}" }

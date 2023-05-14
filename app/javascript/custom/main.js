@@ -12802,7 +12802,7 @@ document.addEventListener("turbo:load", function() {
     }
   }, 2000);
   setTimeout(() => {
-    heroVideo?.setAttribute("src", "https://dovkram.s3.eu-west-2.amazonaws.com/dovkram_promo_2_28.m4v");
+    heroVideo?.setAttribute("src", "https://dovkram.s3.eu-west-2.amazonaws.com/dovkram_promo.mp4");
     addClass(heroImage, "hide");
     addClass(document.querySelector(".hero__video"), "show");
   }, 1500);
@@ -12833,19 +12833,15 @@ document.addEventListener("turbo:load", function() {
   if (burger) {
     burger.addEventListener("click", () => {
       toggleClass(burger, "active");
-      toggleClass(menu, "show");
+      // toggleClass(menu, "show");
       toggleClass(siteContainer, "hidden");
     });
-    // burger.addEventListener("keydown", () => {
-    //   toggleClass(burger, "active");
-    //   toggleClass(menu, "show");
-    //   toggleClass(siteContainer, "hidden");
-    // });
     siteContainer.addEventListener("click", e => {
       if (e.target.classList.contains("hidden")) {
+        console.log('sonme')
         toggleClass(burger, "active");
-        toggleClass(menu, "show");
-        toggleClass(siteContainer, "hidden");
+        // toggleClass(menu, "show");
+        // toggleClass(siteContainer, "hidden");
       }
     });
     links.forEach(link => {
@@ -12921,6 +12917,5 @@ document.addEventListener("turbo:load", function() {
   })();
 
   /******/ })()
-  ;
-
+    ;
 })

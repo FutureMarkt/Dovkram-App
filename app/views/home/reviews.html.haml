@@ -12,7 +12,7 @@
           .reviews__slide.swiper-slide
             .reviews__block.block-reviews
               .block-reviews__image{ style: 'height: 393px' }
-                = image_tag "reviews/first_prize_residential_apartments_israel_2022.webp", alt: '', width: '536'
+                = image_tag "reviews/first_prize_residential_apartments_israel_2022.webp", alt: t('reviews.first_prize.title'), width: '536'
               .block-reviews__content
                 %span= t('reviews.first_prize.title')
                 .block-reviews__desc= raw t('reviews.first_prize.desc')
@@ -20,7 +20,7 @@
           .reviews__slide.swiper-slide
             .reviews__block.block-reviews
               .block-reviews__image
-                = image_tag "reviews/dov_kram_on_stair.webp", alt: '', width: '536'
+                = image_tag "reviews/dov_kram_on_stair.webp", alt: t('reviews.trade_magazine.title'), width: '536'
               .block-reviews__content
                 %span= t('reviews.trade_magazine.title')
                 .block-reviews__desc= raw t('reviews.trade_magazine.desc')
@@ -29,7 +29,7 @@
           .reviews__slide.swiper-slide
             .reviews__block.block-reviews
               .block-reviews__image
-                = image_tag "reviews/maimonides_newsletter.webp", alt: '', width: '536'
+                = image_tag "reviews/maimonides_newsletter.webp", alt: t('reviews.maimonides.title'), width: '536'
               .block-reviews__content
                 %span= t('reviews.maimonides.title')
                 .block-reviews__desc= raw t('reviews.maimonides.desc')
@@ -42,12 +42,12 @@
             .reviews__slide.swiper-slide
               .reviews__block.block-reviews
                 .block-reviews__image
-                  = image_tag "reviews/review_#{ix}.webp", alt: '', height: '576', width: '536', loading: 'lazy'
+                  = image_tag "reviews/review_#{ix}.webp", alt: review.translations.find_by(locale: :en).name, height: '576', width: '536', loading: 'lazy'
                 .block-reviews__content
                   %span= review.translations.find_by(locale: :en).name
                   .block-reviews__desc
                     = simple_format review.translations.find_by(locale: :en).desc
             - ix += 1
 
-        .swiper-button-prev
-        .swiper-button-next
+        .swiper-button-prev{ aria: { label: t('reviews.link.next') }, role: 'navigation' }
+        .swiper-button-next{ aria: { label: t('reviews.link.prev') }, role: 'navigation' }

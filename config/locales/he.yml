@@ -21,6 +21,19 @@ he:
     contacts: צור קשר
     our_team: הצוות שלנו
 
+  logo:
+    left_part: Logo - left part
+    middle_part: Logo - middle part
+    right_part: Logo - right part
+
+  social:
+    facebook:
+      link: Link to Dov Kram Ltd. Facebook page
+      icon: Link to Dov Kram Ltd. Facebook page icon
+    instagram:
+      link: Link to Dov Kram Ltd. Instagram page
+      icon: Link to Dov Kram Ltd. Instagram page icon
+
   about_us:
     title: הסיפור שלנו
     info: "<p class='about__desc'>שמי דב קראם. נולדתי בארהייב למשפחה של בנאים וגאה להיות דור שלישי לקבלני ביצוע. במשך 17 שנה ניהלתי וביצעתי מאות פרויקטים בארהייב.</p><p class='about__desc'>לאחר שעשיתי עלייה לישראל עם משפחתי, רבים מקהל לקוחותינו הנאמנים שעלו לישראל עם השנים, שמעו שהגעתי לארץ ופנו אלי בבקשה לנהל ולבצע פרוייקטים בשבילם גם פה - בישראל.</p><p class='about__desc'>מהר מאוד השתלבתי בבניית בתי יוקרה בארץ ופיתחתי את החברה. כיום - אנו מובילים את הפרויקטים היוקרתיים והמורכבים בישראל- בבניה הפרטית.</p><h2>המומחיות שלנו</h2><p class='about__desc'>יצירת מענה פונקציונלי ללקוח והתאמת השירות בהתאם לצורך. מטה החברה שלנו יודע ללוות את הלקוח משלב החלום, ליווי צמוד בשלב התכנון, בניית צוות התכנון וסיוע מקיף בהוצאת ההיתר, ממשיך בניהול ביצוע הפרויקט ברמה הגבוהה ביותר ועד מילוי המקרר במצרכים.</p><h2>המשמעות</h2><p class='about__desc'>ראש שקט ללקוח, ללקוח יש חוזה אחד, אחריות במקום אחד ואיש קשר אחד - אנחנו.</p><p class='about__desc'>הייחודית שלנו בשמירה על רף גבוה שכזה טמונה בניהול הביצוע. שיטת הניהול המתקדמת שלנו מורכבת ממספר גורמים - ניהול מוקפד, הליך בחירת קבלנים בררני ויסודי, ביקורי אתר תכופים, ידע טכני נרחב וניסיון בבניית מאות בתי יוקרה ונחלות בארץ ובחוייל וירידה לפרטים הקטנים ביותר - נותנים לנו את היכולת לקדם מספר תהליכים רב באותו זמן ומביא לקיצור לוחות זמנים ולסטנדרט בתים ברמת הביצוע הגבוהה בישראל.</p><h2>קהל יעד</h2><p class='about__desc'>הלקוחות שלנו הינם בדרך כלל לקוחות פרטיים, אדריכלים ומעצבים בעלי רצון לקבלת שירות מלא ומקיף, דרישה לסטנדרטים גבוהים מאוד ובדרך כלל פרוייקטים מורכבים- בתים לשימור, פנטהאוזים גדולים, וילות ובנייני בוטיק.</p><h2>לסיום</h2><p class='about__desc'>צריך לזכור שבניית בתים הינו אחד הדברים האחרונים בשוק שהם עדיין עבודת יד. בכל אתר מהתחלה ועד סוף הפרוייקט עוברים מאות רבות של עובדים שכולם עושים את המלאכה שלהם בידיים. רק בניהול מוקפד ויצירת סינרגיה מושלמת בין כולם, נגיע לרמה הרצויה.</p><h2>נשמח להגשים גם את החלום שלכם!</h2>"
@@ -67,6 +80,10 @@ he:
 
   reviews:
     title: ?מה הלקוחות שלנו אומרים
+    link:
+      next: Link to next review
+      prev: Link to previous review
+
     first_prize:
       title: First Prize, Large Apartment of 2022
       desc: "<p>Dov Kram LTD was privileged to be the General Contractor on the 'Large Apartment of 2022' award given to the designer, Erez Hyatt by בניין ודיור</p>"
@@ -80,6 +97,10 @@ he:
       title: Maimonides School, Boston
       desc: "<p>Dov Kram's former school in Boston, MA featured Dov and a story about his company in one of their publications</p>"
       link_name: View publication
+
+  gallery:
+    zoom_link: Click to view larger image
+    image_alt: Project image
 
   contacts:
     jerusalem: ירושלים

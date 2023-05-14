@@ -52,6 +52,19 @@ en:
     contacts: Contact Us
     our_team: Our Team
 
+  logo:
+    left_part: Logo - left part
+    middle_part: Logo - middle part
+    right_part: Logo - right part
+
+  social:
+    facebook:
+      link: Facebook page
+      icon: Facebook icon
+    instagram:
+      link: Instagram page
+      icon: Instagram icon
+
   about_us:
     title:  General Contractor and Construction Project Management Firm
     info: "<p class='about__desc'>Dov Kram LTD is a one stop shop for all construction and project management needs. Streamlining and simplifying what is typically seen as a complicated and cumbersome process and allowing for their customers to make design decisions and leaving the headaches of the day to day to Dov Kram LTD.</p><p class='about__desc'>High end and luxury finishes without compromise.</p><p class='about__desc'>In addition to the owner and CEO's more than two decades of high level professional experience there is a team of experts who will be working with you to produce the highest level of finish and service in the international marketplace.</p>"
@@ -97,6 +110,10 @@ en:
 
   reviews:
     title: What our customers say?
+    link:
+      next: Link to next review
+      prev: Link to previous review
+
     first_prize:
       title: First Prize, Large Apartment of 2022
       desc: "<p>Dov Kram LTD was privileged to be the General Contractor on the 'Large Apartment of 2022' award given to the designer, Erez Hyatt by בניין ודיור</p>"
@@ -110,6 +127,10 @@ en:
       title: Maimonides School, Boston
       desc: "<p>Dov Kram's former school in Boston, MA featured Dov and a story about his company in one of their publications</p>"
       link_name: View publication
+
+  gallery:
+    zoom_link: Click to view larger image
+    image_alt: Project image
 
   contacts:
     jerusalem: Jerusalem

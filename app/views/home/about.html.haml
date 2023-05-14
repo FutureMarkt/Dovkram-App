@@ -23,7 +23,7 @@
                 .card-team__image
                   %picture
                     %source{ srcset: image_path("team/#{nm}.webp"), type: "image/webp" }
-                    = image_tag("team/#{nm}.jpg", width: "216", height: "325")
+                    = image_tag("team/#{nm}.jpg", width: "216", height: "325", alt: t("our_team.#{nm}.name"))
                 %h3.card-team__name= t("our_team.#{nm}.name")
                 %span.card-team__pos= t("our_team.#{nm}.title")
                 %p.card-team__desc= t("our_team.#{nm}.description")
