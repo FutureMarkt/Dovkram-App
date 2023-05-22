@@ -75,4 +75,4 @@ gem 'simple_form'
 
 gem 'globalize'
 
-ruby "3.2.0"
+ruby "3.2.2"

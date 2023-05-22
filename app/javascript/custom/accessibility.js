@@ -1,28 +1,34 @@
-document.addEventListener("turbo:load", function() {
+
+const burger = document.querySelector(".burger")
+const siteContainer = document.querySelector(".site-container")
+
+document.addEventListener("turbo:load", function () {
   window.addEventListener("load", function (event) {
-    const burger = document.querySelector(".burger")
-    const siteContainer = document.querySelector(".site-container")
+    console.log(burger)
 
     // Click on burger
-  burger.addEventListener("click", e => {
-    if (e.target.classList.contains("active")) {
-      // Open
-      addMenu()
-    } else {
-      // Close
-      destroyMenu()
-    }
-  })
-
-  siteContainer.addEventListener("click", e => {
-    if (e.target.classList.contains("hidden")) {
+    burger.addEventListener("click", e => {
+      if (document.querySelector('.nav')) {
         destroyMenu()
-        toggleClass(siteContainer, "hidden")
+        burger.classList.remove('active')
+        siteContainer.classList.remove('hidden')
+      } else {
+        addMenu()
+        burger.classList.add('active')
+        siteContainer.classList.add('hidden')
       }
+    })
+
+    siteContainer.addEventListener("click", e => {
+      if (e.target.classList.contains("hidden")) {
+          destroyMenu()
+          toggleClass(siteContainer, "hidden")
+        }
     })
   })
 
   const addMenu = () => {
+    console.log('create')
       // Create menu
       let $menu = document.createElement("nav")
       $menu.classList = 'nav'
@@ -61,11 +67,14 @@ document.addEventListener("turbo:load", function() {
   }
 
   const destroyMenu = () => {
-      const $menu = document.querySelector('.nav')
-      $menu.classList.remove('show')
+    console.log('destroy!')
+    const $menu = document.querySelector('.nav')
+    $menu.classList.remove('show')
 
-      setTimeout(() => {
-          $menu.remove()
+    setTimeout(() => {
+      if ($menu.remove()) console.log('destroy!!')
+      console.log('destroy!!!')
+          
       }, 500)
   }
 

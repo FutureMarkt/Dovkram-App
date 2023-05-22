@@ -2,6 +2,5 @@
 import "@hotwired/turbo-rails"
 import "controllers"
 import "custom/main"
-import "custom/accessibility"
 import "trix"
 import "@rails/actiontext"
